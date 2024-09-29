@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Logical Symbols}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Logical "And", "Or", and "Not"}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}The Conditional}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Alternate Language}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Truth Table}{2}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}The Biconditional}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Logical Laws}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Associative Law}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Communicative Law}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Idempotent Law}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Absorption Law}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Distributive Law}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}De Morgan's Law}{3}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Double Negation Law}{3}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Tautologies and Contradictions}{3}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Tautologies}{3}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.2}Contradictions}{3}{subsubsection.2.8.2}%
+\contentsline {section}{\numberline {3}Introducing Proofs}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Notation}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Writing Proofs}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}General Strategies for Proofs}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Proving Negated Statements}{4}{subsection.3.4}%

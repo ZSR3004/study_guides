@@ -1,0 +1,33 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Prerequisite Math}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Partial Derivatives}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Basic Vector Operation}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Representing Vectors}{3}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Vector Addition and Subtraction}{3}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Calculating Magnitude}{3}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Dot Product}{3}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Dot Product, Solved for Theta}{3}{subsubsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.6}Cross Product}{3}{subsubsection.1.2.6}%
+\contentsline {section}{\numberline {2}Kinematics in n Dimensions}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Primary Kinematic Equations}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Special Case: Constant Acceleration}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Relative Kinematics Based on Postion}{4}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Rotational Kinematics}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Introducing Rotational Kinematics}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Primary Rotational Kinematics Equations}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Special Case: Constant Rotational Acceleration}{5}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Centripedal Acceleration}{6}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Period and Frequency}{6}{subsubsection.2.2.5}%
+\contentsline {section}{\numberline {3}Forces}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Reference Frames}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Newton's Laws}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Newton's First Law: Inertia}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Newton's Second Law: Force}{8}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Newton's Third Law: Action \& Reaction}{8}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {4}Work, Energy, and Power}{9}{section.4}%
+\contentsline {section}{\numberline {5}Impulse and Momentum}{10}{section.5}%
+\contentsline {section}{\numberline {6}Simple Harmonic Motions (SMH)}{11}{section.6}%
+\contentsline {section}{\numberline {A}Translational and Rotational Counterparts}{12}{appendix.A}%
+\contentsline {section}{\numberline {B}Proofs}{13}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Kinematic Equations}{13}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Newton's Second Law}{13}{subsection.B.2}%

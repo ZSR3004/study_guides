@@ -1,0 +1,283 @@
+\documentclass{article}
+
+\title{General Physics Study Guide}
+\author{Ziyad Rahman \\ Email \href{zrahman3004@gmail.com}{zrahman3004@gmail.com} }
+\date{}
+
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% Formats units as a parenthetical
+\newcommand{\unit}[1]{\; \mathrm{#1}}
+
+% Formats units as a parenthetical
+\newcommand{\unitP}[1]{\; (\mathrm{#1})}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Prerequisite Math}
+\subsection{Partial Derivatives}
+
+\begin{equation}
+    \mathrm{d}f = \frac{\partial f}{\partial x} \mathrm{d}x + \frac{\partial f}{\partial y} \mathrm{d}y + \frac{\partial f}{\partial z} \mathrm{d}z
+\end{equation}
+\subsection{Basic Vector Operation}
+\subsubsection{Representing Vectors}
+Let $\vec{A}$ be a vector of 3 dimensions.
+\begin{equation}
+    \vec{A} = \langle \vec{A}_x, \; \vec{A}_y, \; \vec{A}_z \rangle = \vec{|A|}_x \hat{i} + \vec{|A|}_y \hat{j} + \vec{|A|}_z \hat{k}
+\end{equation}
+
+\subsubsection{Vector Addition and Subtraction}
+\begin{equation}
+    \vec{A} \pm \vec{B} = \langle \vec{A}_x \pm \vec{B}_x, \; \vec{A}_y \pm \vec{B}_y, \; \vec{A}_z \pm \vec{B}_z \rangle = \vec{C}
+\end{equation}
+
+\subsubsection{Calculating Magnitude}
+\begin{equation}
+    |\vec{A}| = \sqrt{\vec{A_x}^2 + \vec{A_y}^2 + \vec{A_z}^2} 
+\end{equation}
+
+\subsubsection{Dot Product}
+\begin{equation}
+    \vec{A} \cdot \vec{B} = (\vec{A_x} \times \vec{B_x}) + (\vec{A_y} \times \vec{B_y}) + (\vec{A_z} \times \vec{B_z})
+\end{equation}
+\begin{equation}
+    \vec{A} \cdot \vec{B} = |\vec{A}| \times |\vec{B}|\cos{\theta}
+\end{equation}
+
+\subsubsection{Dot Product, Solved for Theta}
+\begin{equation}
+    \theta = \cos^{-1} \left( {\frac{\vec{A} \cdot \vec{B}}{|\vec{A}| \times |\vec{B}|}} \right)
+\end{equation}
+
+\subsubsection{Cross Product}
+\begin{equation}
+    \vec{A} \times \vec{B} = |\vec{A}||\vec{B}| n \sin \theta
+\end{equation}
+
+Where, $n = $ the unit vector perpendicular to both $\vec{A}$ and $\vec{B}$.
+
+
+
+\newpage \section{Kinematics in n Dimensions}
+\subsection{Primary Kinematic Equations}
+We start with $\vec{r}$ which represents displacement (or speed when its magnitude is taken) in a unit of distance per time.
+\begin{equation}
+    \vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t}
+\end{equation}
+\begin{equation}
+    \vec{a} = \frac{\mathrm{d}\vec{v}}{\mathrm{d}t}
+    \end{equation}
+    \subsubsection{Special Case: Constant Acceleration} \label{kinematics const a}
+    \begin{equation}\label{eq: kinematic 1}
+    \vec{v}_f = \vec{v}_i + \vec{a}t
+\end{equation}
+\begin{equation}\label{eq: kinematic 2}
+    \vec{r}_f = \vec{r}_i + \vec{v}_it+ \frac{1}{2}\vec{a}t^2 
+\end{equation}
+\begin{equation}\label{eq: kinematic 3}
+    \vec{v}_f^{ \: 2} = \vec{v}_i^{ \: 2} + 2 \vec{a} (\vec{r}_f - \vec{r}_i)
+\end{equation}
+\begin{equation}\label{eq: kinematic 4}
+    \vec{r}_f - \vec{r}_i = \frac{(\vec{v}_f - \vec{v}_i)t}{2}
+\end{equation}
+\textit{Note:} \ref{eq: kinematic 4} was not an equation explicitly mentioned in class, but it's one I used a lot during highschool physics. For some of the questions on Homework 2, we had to sort of derive this equation, so I included it here because it still seems useful. If you're wondering, \ref{eq: kinematic 4} is basically just $d = rt$ with a non-constant velocity/rate.
+\subsubsection{Relative Kinematics Based on Postion}
+Since positions are relative, we can deduce the relative speed of an object \textit{A} relative to a Point \textit{B} if we know the speed of \textit{A} relative to a position \textit{C} and the speed of \textit{C} relative to \textit{B}'s position. To solve for this, we can use the following formula.
+\begin{equation}
+    v_{\frac{A}{B}} = v_{\frac{A}{C}} +  v_{\frac{C}{B}}
+\end{equation}
+\subsection{Rotational Kinematics}
+
+Just a quick note before this section begins. Appendix \ref{Appendix A} contains a useful chart that summarizes all of the translation and rotational counterparts. The section below provides a slightly more in-depth look at the topic, including useful formulas, but if you're just trying to remember what the rotational counterpart to displacement is, you might be better off checking the chart.
+\newpage
+\subsubsection{Introducing Rotational Kinematics} \label{trans to ang}
+Rotational kinematics operate in practically the same way as translational kinematics, but deals with objects that are spinning or otherwise moving in a circular motion. \\ \\
+Below, we detail how you can take tangential measurements and turn them into their rotational counterparts. \\
+\[ \vec{s} = r \theta \]
+\[ \vec{v} = r \omega \]
+\[ \vec{a} = r \alpha \]
+\[ t = t \]
+
+\noindent In these equations, $\vec{r} = \vec{s}$ for clarity's sake because the $r$ that is included actually refers to the path's radius. Both $\vec{r}$ and $\vec{s}$ mean displacement. You would refer to each counterpart as the "angular" version of the translational one (ex. displacement becomes angular displacement).
+
+\subsubsection{Primary Rotational Kinematics Equations}
+Since we have already defined $\theta$ as angular displacement (in radians) we can define the other kinematic values.
+\begin{equation}
+    \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t}
+\end{equation}
+\begin{equation}
+    \alpha = \frac{\mathrm{d}\omega}{\mathrm{d}t}
+\end{equation}
+
+\subsubsection{Special Case: Constant Rotational Acceleration}
+Now, we can combine the special case kinematic equations found in \ref{kinematics const a} with the definitions that relate the translational and angular values in \ref{trans to ang}. The process is simple, since the angular form of a kinematic value is the just the translational counterpart divided by $r$, we can just divide each of the \ref{kinematics const a} equations by $r$ to create rotational counterparts.
+\begin{equation}
+    \omega_f = \omega_i + \alpha t
+\end{equation}
+\begin{equation}
+    \theta_f = \theta_i + \omega_it+ \frac{1}{2}\alpha t^2 
+\end{equation}
+\begin{equation}
+    \omega_f^{ \: 2} = \omega_i^{ \: 2} + 2 \alpha  (\theta_f - \theta_i)
+\end{equation}
+\begin{equation}
+    \theta_f - \theta_i = \frac{(\omega_f - \omega_i)t}{2}
+\end{equation}
+
+\subsubsection{Centripedal Acceleration}
+Centripetal acceleration, or rotational acceleration, is another important value that is unique to rotational motion. In effect, it is the inward acceleration that keeps an object that is moving in a circular path in that path. For example, you might be swinging a ball on a string in a circle; the reason it doesn't fly out is because the sting is applying a force (and therefore accelerating the ball) back into the circle as tangential velocity "tries to get it" to fly out. \\ \\
+We can define centripetal acceleration using both tangential velocity and angular velocity.
+
+\begin{equation}
+    \vec{a}_c = \frac{\vec{v}^{\: 2}}{r} = \omega^2 r
+\end{equation}
+
+\subsubsection{Period and Frequency}
+As an object rotates around itself (or travels in a circular path), it's bound to come back to the same point eventually. The time it takes for one full rotation (usually called a cycle) is called the \textit{period}, recorded in some unit of time.
+\begin{equation}
+    T = \frac{2 \pi}{\omega}
+\end{equation}
+
+\noindent \textit{Frequency} is the inverse of the period, defined as the number of rotations an object makes in one unit of time. Below are definitions of both in relation to angular velocity and each other. \\
+\begin{equation}
+    f = \frac{1}{T}
+\end{equation}
+An important thing to note is the unit of frequency. Since it's the inverse of $T$, its units are technically just "cycle per unit time", but if the unit of time is seconds, then we the unit hertz (\textit{hz}). In other words $hz = \frac{1}{s}$.
+
+\newpage \section{Forces}
+\subsection{Reference Frames}
+
+Reference frames, especially inertial reference frames, are an extremely important concept in the General Physics course. For the most part, homework and exam problems will exist within inertial reference frames, but it is still important to understand what a reference frame is and they relate to Newton's laws. \\
+
+\noindent This subsection will discuss in the broadest terms what reference frames are. There is a lot more nuanced especially as you move into special relatively, but for the purposes of this study guide, I have boiled the concept down to the basic version we need to understand for this course. \\
+
+\noindent \textbf{Reference Frame:} Refers to the parameters of observation, such as how the axes are situated or when $t=0$. \\
+
+\noindent \textbf{Inertial Reference Frame:} Refers to a reference frame in which Newton's laws hold true. That is, we can identify every force acting on an object and determine that motion is consistent with Newton's three laws. If you find yourself in a non-inertial reference frame, you may do one of two things.
+\begin{enumerate}
+    \item Accept that you are in a non-inertial reference frame and calculate motion without Newton's laws.
+    \item Accept that you are in a non-inertial reference frame, but add a "fake" or "non-existent" force which allows you to use Newton's laws.
+\end{enumerate}
+\textit{Example:} Say a person is in a car that moves along a curved road. There are two possible observation points, otherwise known as reference frames. The first is an outside observer standing at the side of the road, and the second frame is of the person sitting inside of the car.
+\begin{enumerate}
+    \item The observer on the side of the road \textit{is} in an inertial reference frame: \\
+    From the observer's point of view, all motion can be explained using Newton's laws. Put simply, the observer can determine that the car is moving, that it is being pulled into the curve by centripetal acceleration (friction on the tires).
+    \item The person inside the car \textit{is not} in an inertial reference frame: \\
+    The person inside the car has a different perspective. From their reference frame, the road is moving, not them. Due to this, they cannot determine that they have a tangential velocity to the curve of the road, and therefore, they cannot explain why they are being pushed off the road.
+    \begin{enumerate}
+        \item They can either accept they are in a non-inertial reference frame and make calculations accordingly (without Newton's laws), or
+        \item Accept they are in a non-inertial reference frame, but add a "fake" force pushing them outside the circle so that Newton's second law holds true. This allows them to use all of Newton's laws.
+    \end{enumerate}
+\end{enumerate}
+
+
+\subsection{Newton's Laws}
+\subsubsection{Newton's First Law: Inertia}
+\textbf{Definition:} In an inertial frame of reference, if there is \textit{no} force on an object, then a stationary object remains at rest and an object in motion stays in motion with a constant velocity, $\vec{v}$. \\
+
+\noindent \textbf{Sloadism Definition:} If there's no force on an object, then its movement doesn't change. If its stopped, it will stay stopped, if its moving, it'll keep moving at the same speed. \\
+
+\subsubsection{Newton's Second Law: Force}
+\textbf{Formal Definition:} In an inertial-reference frame, for an object of momentum $\vec{p}$, the net force is the change in momentum over time. \\
+
+\noindent \textbf{Sloadism Definition:} The net force on an object is its impulse over time (or mass times acceleration).
+
+\begin{equation}
+    F_{net} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = m\vec{a}
+\end{equation} % ask about which are vectors vs which are magnitude
+
+\noindent{Where,} \\
+$p = $ momentum of the object in newton-meters. \\
+$t = $ time in seconds. \\
+$m = $ the mass of the object in kilograms. \\
+$a = $ the acceleration of the object in meters per second. \\
+
+\noindent Check \ref{Appendix B} for the proof.
+
+\subsubsection{Newton's Third Law: Action \& Reaction}
+\textbf{Definition:} In an inertial reference frame, $F_{\mathrm{A \, on \, B}} = -F_{\mathrm{B \, on \, A}}$. \\
+
+\noindent \textbf{Sloadism Definition:} Every action has an equal and opposite reaction.
+
+Maybe add that thing about how the book and the table are not normal.
+
+\newpage
+\section{Work, Energy, and Power}
+
+\newpage
+\section{Impulse and Momentum}
+
+\newpage
+\section{Simple Harmonic Motions (SMH)}
+
+\newpage
+\appendix
+
+\section{Translational and Rotational Counterparts}\label{Appendix A}
+
+\begin{center}
+\begin{tabular}{|c | c |}
+    \hline
+    Translational & Rotational \\
+    \hline \hline
+    $\vec{r} \; (m)$ & $\theta \; (rad)$ \\
+    $\vec{v} \; (\frac{m}{s}) $ & $\omega \; (\frac{rad}{s})$ \\
+    $\vec{a} \; (\frac{m}{s^2})$ & $\alpha \; (\frac{rad}{s^2})$ \\
+    $t \; (s)$ & $t \; (s)$ \\
+    \hline \hline
+    $m \; (\mathrm{kg})$ & $I \unitP{kgm}$\\
+    \hline
+\end{tabular}
+\end{center}
+
+\newpage
+\section{Proofs}\label{Appendix B}
+
+\subsection{Kinematic Equations}
+\begin{theorem}
+    The definition of acceleration can be transformed into the first kinematic equation, \ref{eq: kinematic 1}.
+\end{theorem}
+\begin{proof}
+    We know that $\vec{a} = \frac{\mathrm{d}\vec{v}}{\mathrm{d}t}$. For some non-instant change in time, we can rewrite this equation as 
+    $\vec{a} = \frac{\vec{v}_f - \vec{v}_i}{\mathrm{d}t}$. Now, we can solve for $\vec{v}_f$, creating the equation $\vec{v}_f = \vec{v}_i + \vec{a}t$.
+    This equation is the same as \ref{eq: kinematic 1}.
+\end{proof}
+
+\begin{theorem}
+    The first kinematic equation, \ref{eq: kinematic 1}, can be transformed into the second kinematic equation, \ref{eq: kinematic 2}.
+\end{theorem}
+\begin{proof}
+      
+\end{proof}
+
+\begin{theorem}
+    The second kinematic equation, \ref{eq: kinematic 2}, may be transformed into the third kinematic equation, \ref{eq: kinematic 3}.
+\end{theorem}
+
+\subsection{Newton's Second Law}
+\begin{theorem}
+For a constant mass, $m$, show that $\frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = m\vec{a}.$
+\end{theorem}
+\begin{proof}
+    Since, $\vec{p} = m \vec{v}$ we can rewrite the derivative as,
+    \[ \frac{\mathrm{d}(m \vec{v})}{\mathrm{d}t} \]
+    Since $m$ is constant, we can pull it out of the derivative.
+    \[ m\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \]
+    Then,
+    \[\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} = \vec{a}\]
+    Thus, \[ m\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} = m\vec{a}\]
+\end{proof}
+
+\end{document}
