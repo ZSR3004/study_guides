@@ -8,13 +8,14 @@
 \usepackage{amssymb}
 \usepackage[english]{babel}
 \usepackage{amsthm}
+\usepackage{siunitx}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
 
 % Formats units as a parenthetical
-\newcommand{\unit}[1]{\; \mathrm{#1}}
+\newcommand{\unite}[1]{\; \mathrm{#1}}
 
 % Formats units as a parenthetical
 \newcommand{\unitP}[1]{\; (\mathrm{#1})}
@@ -26,6 +27,28 @@
 \newpage
 
 \section{Prerequisite Math}
+
+\subsection{Special Angles}
+
+Here are very common angles that may be asked of you. It's best to memorize these angles and their
+values when trigonometric functions are used on them. These angles are reference angles, and because
+of that, they only represent magnitude. You need to add the sign after you are done computing the value based
+on what is physically happening in the scenario/question.
+
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    Operation & $\ang{0} = 0 $ & $\ang{30} = \frac{\pi}{6}$ & $\ang{45} = \frac{\pi}{4}$ & $\ang{60} = \frac{\pi}{3}$ & $\ang{90} = \pi$ \\
+    \hline
+    $\sin (\theta)$ & 0 & $\frac{1}2$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ \\
+    \hline
+    $\cos (\theta)$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}2$ & $0$ \\
+    \hline
+    $\tan (\theta)$ & 0 & $\frac{1}{\sqrt{3}}$ & $1$ & $\sqrt{3}$ & undefined \\
+    \hline
+\end{tabular}
+\end{center}
+
 \subsection{Partial Derivatives}
 
 \begin{equation}
@@ -100,7 +123,7 @@ Since positions are relative, we can deduce the relative speed of an object \tex
 \end{equation}
 \subsection{Rotational Kinematics}
 
-Just a quick note before this section begins. Appendix \ref{Appendix A} contains a useful chart that summarizes all of the translation and rotational counterparts. The section below provides a slightly more in-depth look at the topic, including useful formulas, but if you're just trying to remember what the rotational counterpart to displacement is, you might be better off checking the chart.
+Just a quick note before this section begins. Appendix \ref{Appendix B} contains a useful chart that summarizes all of the translation and rotational counterparts. The section below provides a slightly more in-depth look at the topic, including useful formulas, but if you're just trying to remember what the rotational counterpart to displacement is, you might be better off checking the chart.
 \newpage
 \subsubsection{Introducing Rotational Kinematics} \label{trans to ang}
 Rotational kinematics operate in practically the same way as translational kinematics, but deals with objects that are spinning or otherwise moving in a circular motion. \\ \\
@@ -204,7 +227,7 @@ $t = $ time in seconds. \\
 $m = $ the mass of the object in kilograms. \\
 $a = $ the acceleration of the object in meters per second. \\
 
-\noindent Check \ref{Appendix B} for the proof.
+\noindent Check \ref{Appendix C} for the proof.
 
 \subsubsection{Newton's Third Law: Action \& Reaction}
 \textbf{Definition:} In an inertial reference frame, $F_{\mathrm{A \, on \, B}} = -F_{\mathrm{B \, on \, A}}$. \\
@@ -212,6 +235,33 @@ $a = $ the acceleration of the object in meters per second. \\
 \noindent \textbf{Sloadism Definition:} Every action has an equal and opposite reaction.
 
 Maybe add that thing about how the book and the table are not normal.
+
+\subsection{Hooke's Law}
+Hooke's law is the equation we use to determine the amount of force it takes to stretch or
+compress a string. It is as follows:
+
+\begin{equation}\label{eq : hooke}
+    \vec{F}_{spring} = -k \Delta x
+\end{equation}
+
+\noindent Where, \\
+\indent $k$ is the elastic coefficient \\
+\indent $\Delta x$ is the distance the spring has moved
+
+\subsubsection{The Elastic Coefficient}
+The elastic coefficient, $k$, is a constant based on the spring/material that is being used.
+It describes how many newtons it takes to stretch or compress that material by one meter.
+It follows then that it's units are $\frac{N}{m}$.
+\subsection{Gravity}
+\begin{equation}\label{eq : grav force}
+    F_{gravity} = G\frac{m_1 m_2}{r^2}
+\end{equation}
+
+\noindent Where, \\
+\indent $G$ = Newton's Gravitational Constant $\approx$ $6.67 \times 10^{-11}$ \\
+\indent $m_1$ = The mass of the first object \\
+\indent $m_2$ = The mass of the second object \\
+\indent $r$ = The distance between the two objects \\
 
 \newpage
 \section{Work, Energy, and Power}
@@ -225,7 +275,19 @@ Maybe add that thing about how the book and the table are not normal.
 \newpage
 \appendix
 
-\section{Translational and Rotational Counterparts}\label{Appendix A}
+\section{Constants}\label{Appendix A}
+
+\begin{center}
+\begin{tabular}{c | c}
+    Pi & $\pi = 3.1415$\\
+    Euler's Constant & $e = 2.7182$ \\
+    Acceleration due to Earth's Gravity & $g = 9.89 \frac{m}{s^2} \approx 10 \frac{m}{s^2}$ \\
+    Newton's Gravitational Constant & $G = 6.67430 \times 10^{-11} \frac{Nm^2}{kg^2}$ \\
+\end{tabular}
+\end{center}
+
+\newpage
+\section{Translational and Rotational Counterparts}\label{Appendix B}
 
 \begin{center}
 \begin{tabular}{|c | c |}
@@ -243,7 +305,7 @@ Maybe add that thing about how the book and the table are not normal.
 \end{center}
 
 \newpage
-\section{Proofs}\label{Appendix B}
+\section{Proofs}\label{Appendix C}
 
 \subsection{Kinematic Equations}
 \begin{theorem}
