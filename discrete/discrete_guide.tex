@@ -1,0 +1,241 @@
+\documentclass{article}
+
+\title{Discrete Math Study Guide}
+\author{Ziyad Rahman}
+\date{}
+
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{babel}
+\usepackage{amsthm}
+\usepackage{siunitx}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Logical Symbols and Deductive Reasoning}
+\subsection{Variables and Statements}
+A \textbf{variable} is a symbol that stands in for some specific value, be it a
+person, number, etc. \\
+
+\noindent A \textbf{statement} is a something that may evaluate to true or false.
+It is usually either in the form $P$ if it does not depend on a variable
+or $P(x)$ if the statement's truth depends on what the input is.
+
+\subsection{Connective Symbols}
+\subsection{Logical Laws}
+\subsubsection{Associative Law}
+\begin{eqnarray}
+    (P \land Q) \land R &=& P \land (Q \land R) \\
+    (P \lor Q) \lor R &=& P \lor (Q \lor R)
+\end{eqnarray}
+
+\subsubsection{Communative Law}
+\begin{eqnarray}
+    P \land Q &=& Q \land P \\
+    P \lor Q &=& Q \lor P
+\end{eqnarray}
+\subsubsection{Distributive Law}
+\begin{eqnarray}
+    P \land (Q \lor R) &=& (P \land Q) \lor (P \land R) \\
+    P \lor (Q \land R) &=& (P \lor Q) \land (P \lor R)
+\end{eqnarray}
+\subsubsection{Double Negation Law}
+\begin{eqnarray}
+    \neg \neg P &=& P
+\end{eqnarray}
+\subsubsection{De Morgan's Law}
+\begin{eqnarray}
+    \neg(P \land Q) &=& (\neg P \lor \neg Q) \\
+    \neg(P \lor Q) &=& (\neg P \land \neg Q)
+\end{eqnarray}
+\subsubsection{Idempotent Law}
+\begin{eqnarray}
+    P \land P &=& P \\
+    P \lor P &=& P
+\end{eqnarray}
+\subsubsection{Absorption Law}
+\begin{eqnarray}
+    P \land (P \lor Q) &=& P \\
+    P \land (P \lor Q) &=& P 
+\end{eqnarray}
+
+\subsection{Truth Tables}
+Truth tables are are relative straight forward concept. The aim is
+to evaluate the truth of statement by breaking it down into its
+smallest parts, then seeing if the final statement is true or false
+based on the truth of the sub-statements. Here is a simple example,
+\begin{center}
+    \begin{tabular}{c | c | c}
+        P & Q & $P \lor Q$ \\
+        \hline
+        T & T & T \\
+        T & F & T \\
+        F & T & T \\
+        F & F & F \\
+    \end{tabular}
+\end{center}
+
+\subsection{The Conditional}
+\subsubsection{Definition}
+The conditional can be thought of as an "if, then" statement. It 
+primarily demonstrates some relationship between two statements.
+In symbols, it is represented as,
+
+\[ P \rightarrow Q \]
+
+\noindent This statement can be read several ways in English:
+\begin{enumerate}
+    \item $P$ implies $Q$
+    \item $P$ only if $Q$
+    \item $P$ is a sufficient condition for $Q$
+    \item $Q$, if $P$
+    \item $Q$ is a necessary condition for $P$
+\end{enumerate}
+
+\subsubsection{The Truth of a Conditional}
+We can demonstrate the truth of the conditional via a truth table.
+\begin{center}
+    \begin{tabular}{c | c | c}
+        P & Q & $P \rightarrow Q$ \\
+        \hline
+        T & T & T \\
+        T & F & F \\
+        F & T & T \\
+        F & F & T \\
+    \end{tabular}
+\end{center}
+
+To put the truth table into plain words, the conditional is
+true only if both $Q$ is true or if $P$ and $Q$ are both false. In other
+words, the conditional is only false if only $Q$ is false.
+
+\subsubsection{The Conditonal in Logical Connectives}
+We can write the conditional in terms of basic logical connectives.
+The definition of conditional in these terms is as follows.
+
+\[ P \rightarrow Q \; \; \; \equiv \; \; \; \neg P \lor Q \; \; \; \equiv \; \; \; P \land \neg Q\]
+
+\noindent Note that the rightmost statement is the same as the middle statement, but De Morgan's Law
+was applied.
+
+We can verify that these statements are equivalent via another truth table.
+
+\begin{center}
+    \begin{tabular}{c | c | c | c | c}
+        P & Q & $P \rightarrow Q$ & $\neg P \lor Q$ & $P \land \neg Q$ \\
+        \hline
+        T & T & T & T & T \\
+        T & F & F & F & F \\
+        F & T & T & T & T \\
+        F & F & T & T & T \\
+    \end{tabular}
+\end{center}
+
+\subsubsection{The Converse}
+The converse of a conditional is simply the conditional, but the statements
+have been swapped around.
+\begin{eqnarray} \nonumber
+    P \rightarrow Q &\not\equiv & Q \rightarrow P
+\end{eqnarray}
+
+We could write a truth table to demonstrate that these statements are \textbf{NOT}
+equivalent, but we will use the definition of the conditional (the logical symbols
+version) to demonstrate intuitively that these are not the same.
+
+\begin{eqnarray} \nonumber
+    P \rightarrow Q &\equiv& \neg P \lor Q \\
+    Q \rightarrow P &\equiv& \neg Q \lor P \\
+    \neg P \lor Q &\not\equiv& \neg Q \lor P
+\end{eqnarray}
+
+\subsubsection{The Contrapositive}
+The contrapositive of a conditional is a negated version of the original
+statement. Unlike the converse of conditional, the contrapositive is 
+equivalent to the original statement.
+\begin{eqnarray} \nonumber
+    P \rightarrow Q &\equiv& \neg Q \rightarrow P
+\end{eqnarray}
+
+We could use a truth table to show that these statements are equivalent,
+but we can also use the logical forms of the conditionals achieve the same end.
+
+\begin{eqnarray} \nonumber
+    P \rightarrow Q &\equiv& \neg P \lor Q \\ \nonumber
+    \neg Q \rightarrow P &\equiv& \neg \neg Q \lor \neg P \\ \nonumber
+    \neg P \lor Q &\equiv& \neg \neg Q \lor P
+\end{eqnarray}
+
+\subsection{The Biconditional}
+\subsubsection{Definition}
+The biconditional is often read as "if an only if". It can be written in terms
+of the conditional or logical connectors. It is written as follows.
+\begin{eqnarray} \nonumber
+    P \leftrightarrow Q
+\end{eqnarray}
+
+In terms of the conditional,
+\begin{eqnarray}
+    P \leftrightarrow Q  &\equiv& (P \rightarrow Q) \land (Q \rightarrow P)
+\end{eqnarray}
+
+The final definition is in terms of logical connectors.
+\begin{eqnarray}
+    P \leftrightarrow &\equiv& (\neg P \lor Q) \land (\neg Q \lor P)
+\end{eqnarray}
+
+\noindent Any statements that are equivalent to those above are valid definition of
+the biconditional.
+
+\subsubsection{The Truth of a Biconditional}
+We can determine the truth of a biconditional via a truth table.
+
+\begin{center}
+    \begin{tabular}{c | c | c}
+        P & Q & $P \leftrightarrow Q$ \\
+        \hline
+        T & T & T \\
+        T & F & F \\
+        F & T & F \\
+        F & F & T \\
+    \end{tabular}
+\end{center}
+
+As we can see, the biconditional only evaluates to true if (and only if) both statements
+involved are true.
+
+\subsection{Arguments}
+
+\section{Quantifiers}
+\subsection{Motivating Quantifiers}
+\subsection{The Universe of Discourse}
+\subsection{The Universal Quantifier}
+\subsection{The Existential Quantifier}
+\subsubsection{Uniqueness}
+\subsection{Bound Variables}
+\subsection{Quantifier Negation}
+
+\section{Set Theory}
+\subsection{Defining Sets}
+\subsubsection{Important Sets}
+\subsubsection{Truth Sets}
+\subsection{Basic Set Operations}
+\subsection{Index Sets}
+\subsection{Families of Sets}
+\subsubsection{The Power Set}
+\subsection{Operations on Families of Sets}
+
+\section{Introductory Proof Strategies}
+\subsection{Theorems, Propositions, and Lemmas}
+\subsection{Proof Writing Basics}
+\subsection{Direct Proofs}
+\subsection{Proof by Contrapositive}
+
+\end{document}
