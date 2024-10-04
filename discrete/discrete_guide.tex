@@ -224,13 +224,112 @@ involved are true.
 
 \section{Set Theory}
 \subsection{Defining Sets}
+\textbf{Set:} A collection of objects. ex. $\{0, 1, 2, 3\}$
+
+\noindent \textbf{Object:} An element of a set. ex. $52$.
 \subsubsection{Important Sets}
-\subsubsection{Truth Sets}
+There are a few very important important sets that we must know. They are as follow:
+\begin{eqnarray} \nonumber
+    \varnothing &=& \{\} \text{; a set with no objects.} \\ \nonumber
+    \mathbb{N} &=& \{x \; | \; x \text{ is a natural number}\} \\ \nonumber
+    \mathbb{Z} &=& \{x \; | \; x \text{ is an integer}\} \\ \nonumber
+    \mathbb{R} &=& \{x \; | \; x \text{ is a real number}\} \\ \nonumber
+    \mathbb{Q} &=& \{x \; | \; x \text{ is a rational number of form } \frac{p}{q} \text{ where } p,q \in \mathbb{R} \text{ and } q \neq 0\} \\ \nonumber
+    \text{Truth Set} &=& \{ x \; | \; P(x) \} \text{; the set of all objects that makes the statement true}
+\end{eqnarray}
+
 \subsection{Basic Set Operations}
-\subsection{Index Sets}
+\subsubsection{Intersection}
+The intersection of two sets is the set of elements in both sets.
+\begin{eqnarray}
+    A \cup B = \{x \; | \; x \in A \land x \in B\}
+\end{eqnarray}
+
+\subsubsection{Union}
+The union of two sets is the set of all elements in the sets.
+\begin{eqnarray}
+    A \cap B = \{ x \; | \; x \in A \lor x \in B \}
+\end{eqnarray}
+
+\subsubsection{Difference}
+The difference of two sets is the set of elements in the first but not the second.
+\begin{eqnarray}
+    A \backslash B = \{ x \; | \; x \in A \land x \notin B \}
+\end{eqnarray}
+
+\subsubsection{Symmetric Difference}
+The symmetric difference of two sets is the set of all elements not in 
+their intersection.
+\begin{eqnarray}
+    A \triangle B = \{ x \; | \; (A \backslash B) \cup (B \backslash A)\} = \{ x \; | \; (A \cup B) \backslash (A \cap B) \}
+\end{eqnarray}
+
+\subsubsection{Subsets, Proper and Improper}
+An (improper) subset is when all elements in some set is contained in some
+other set. \\
+\begin{eqnarray}
+    A \subseteq B &=& \{ x \; | \; \forall x(x \in A \rightarrow x \in B) \}
+\end{eqnarray}
+
+\noindent A proper subset is when all elements in some set are equal to all elements of
+another set.
+\begin{eqnarray}
+    A \subset B &=& \{ x \; | \; \forall x(x \in A \leftrightarrow x \in B) \}
+\end{eqnarray}
+
 \subsection{Families of Sets}
+\textbf{Family of Sets:} Any set that is a set of sets, often denoted as $\mathcal{F}$. For example,
+\begin{eqnarray} \nonumber
+    \mathcal{F} = \{A, B, C\} = \{\{1, 2, 3\}, \{4, 5, 6\}, \{5, 6, 7\}\}
+\end{eqnarray}
+
+\subsubsection{Index Sets}
+\textbf{Index Set:} A set that indexes another set. \\
+
+\noindent An index set does not need to be strictly consecutive integers. For example,
+both of the following sets are valid index sets.
+\begin{eqnarray} \nonumber
+    I &=& \{1, 2, 3\} \\ \nonumber
+    J &=& \{3, 42, 54\}
+\end{eqnarray}
+
+\noindent \textbf{Indexed Set:} A family of sets that has been indexed by an indexed set.
+It is often defined as the following.
+\begin{eqnarray}
+    \mathcal{A} &=& \{A_i \; | \; i \in I\}
+\end{eqnarray}
+
 \subsubsection{The Power Set}
-\subsection{Operations on Families of Sets}
+\textbf{Power Set:} A set whose elements are all subsets of some other set.
+\begin{eqnarray}
+    \mathcal{P}(A) &=& \{ S \; | \; S \subseteq  A \}
+\end{eqnarray}
+
+\noindent Example:
+\begin{eqnarray} \nonumber
+    A &=& \{ 1, 2 \} \\ \nonumber
+    \mathcal{P}(x) &=& \{ \{1\}, \{2\}, \{1, 2\}, \varnothing \}
+\end{eqnarray}
+
+% Need to check these definitions !
+\subsubsection{Operations on Families of Sets}
+\textbf{Intersection of Sets:} A set of all elements that are common to all the sets
+in the family.
+\begin{eqnarray}
+    \bigcap \mathcal{F} &=& \{ x \; | \; \forall A \in \mathcal{F}(x \in A) \}
+\end{eqnarray}
+
+\noindent Another way to think about the intersection of sets is as follows.
+\[ A_1 \cap A_2 \cap ... \cap A_i \]
+
+\noindent \textbf{Union of Sets:} A set of all elements that are in all the sets
+in the family.
+\begin{eqnarray}
+    \bigcup \mathcal{F} &=& \{ x \; | \; \exists A \in \mathcal{F}(x \in A) \}
+\end{eqnarray}
+
+\noindent Another way to think about the intersection of sets is as follows.
+\[ A_1 \cup A_2 \cup ... \cup A_i \]
 
 \section{Introductory Proof Strategies}
 \subsection{Theorems, Propositions, and Lemmas}

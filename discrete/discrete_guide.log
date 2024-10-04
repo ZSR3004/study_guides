@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  3 OCT 2024 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  3 OCT 2024 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,24 +325,59 @@ l.185 \begin{eqnarray}
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.241 \end{document}
-                    ] [7] (./discrete_guide.aux)
+l.229 \noindent
+                \textbf{Object:} An element of a set. ex. $52$.]
+Overfull \hbox (4.84447pt too wide) in alignment at lines 232--239
+ [][][] []
+ []
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.252 \end{eqnarray}
+                    ]
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.306 \end{eqnarray}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.306 \end{eqnarray}
+                    ] [9
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.26}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.340 \end{document}
+                    ] (./discrete_guide.aux)
 Package rerunfilecheck Info: File `discrete_guide.out' has not changed.
-(rerunfilecheck)             Checksum: 8C567101A31177C95AD4DBEB5216C17C;6884.
+(rerunfilecheck)             Checksum: 6665A73542F3ABCA79845013D94BEA7F;7510.
  ) 
 Here is how much of TeX's memory you used:
- 13290 strings out of 476091
- 254963 string characters out of 5794081
+ 13310 strings out of 476091
+ 255285 string characters out of 5794081
  1869330 words of memory out of 5000000
- 33485 multiletter control sequences out of 15000+600000
+ 33489 multiletter control sequences out of 15000+600000
  520150 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,356b,950s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on discrete_guide.pdf (7 pages, 113455 bytes).
+ 75i,12n,76p,356b,950s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on discrete_guide.pdf (9 pages, 154475 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
