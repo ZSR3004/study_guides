@@ -11,16 +11,17 @@
 \contentsline {subsubsection}{\numberline {1.3.6}Idempotent Law}{3}{subsubsection.1.3.6}%
 \contentsline {subsubsection}{\numberline {1.3.7}Absorption Law}{4}{subsubsection.1.3.7}%
 \contentsline {subsection}{\numberline {1.4}Truth Tables}{4}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}The Conditional}{4}{subsection.1.5}%
-\contentsline {subsubsection}{\numberline {1.5.1}Definition}{4}{subsubsection.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.2}The Truth of a Conditional}{4}{subsubsection.1.5.2}%
-\contentsline {subsubsection}{\numberline {1.5.3}The Conditonal in Logical Connectives}{5}{subsubsection.1.5.3}%
-\contentsline {subsubsection}{\numberline {1.5.4}The Converse}{5}{subsubsection.1.5.4}%
-\contentsline {subsubsection}{\numberline {1.5.5}The Contrapositive}{5}{subsubsection.1.5.5}%
-\contentsline {subsection}{\numberline {1.6}The Biconditional}{6}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}Definition}{6}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}The Truth of a Biconditional}{6}{subsubsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.7}Arguments}{7}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.5}Tautologies and Contradictions}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}The Conditional}{4}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Definition}{4}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}The Truth of a Conditional}{4}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}The Conditonal in Logical Connectives}{5}{subsubsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.4}The Converse}{5}{subsubsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.5}The Contrapositive}{5}{subsubsection.1.6.5}%
+\contentsline {subsection}{\numberline {1.7}The Biconditional}{6}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}Definition}{6}{subsubsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.2}The Truth of a Biconditional}{6}{subsubsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.8}Arguments}{7}{subsection.1.8}%
 \contentsline {section}{\numberline {2}Quantifiers}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Motivating Quantifiers}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}The Universe of Discourse}{7}{subsection.2.2}%

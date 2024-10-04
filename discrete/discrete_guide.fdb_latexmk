@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1728011803 "/home/zsr/study_guides/discrete/discrete_guide.tex" "discrete_guide.pdf" "discrete_guide" 1728011805 0
+["pdflatex"] 1728051579 "/home/zsr/study_guides/discrete/discrete_guide.tex" "discrete_guide.pdf" "discrete_guide" 1728051580 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/zsr/study_guides/discrete/discrete_guide.tex" 1728011803 11057 0d256b8083873f91c8917820a488619d ""
+  "/home/zsr/study_guides/discrete/discrete_guide.tex" 1728051579 11164 15f869dceb4cd2fba8ed39aceef57ab8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -91,10 +91,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723396930 7880859 2ccfb47b6943b3216b936d23e7f79ada ""
-  "discrete_guide.aux" 1728011805 6833 7fddc39d7db286a1add30b44af614058 "pdflatex"
-  "discrete_guide.out" 1728011805 7510 6665a73542f3abca79845013d94bea7f "pdflatex"
-  "discrete_guide.tex" 1728011803 11057 0d256b8083873f91c8917820a488619d ""
-  "discrete_guide.toc" 1728011805 4261 24380a629ae45801d1b37517df0541cc "pdflatex"
+  "discrete_guide.aux" 1728051580 6970 9c957c76147cd0ebefd100e987b88d74 "pdflatex"
+  "discrete_guide.out" 1728051580 7724 678a0807a5f6b7321195573d5c5d740d "pdflatex"
+  "discrete_guide.tex" 1728051579 11164 15f869dceb4cd2fba8ed39aceef57ab8 ""
+  "discrete_guide.toc" 1728051580 4357 89568e25de94f2517f6f837344811123 "pdflatex"
   (generated)
   "discrete_guide.aux"
   "discrete_guide.log"
