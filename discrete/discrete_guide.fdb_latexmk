@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1728051579 "/home/zsr/study_guides/discrete/discrete_guide.tex" "discrete_guide.pdf" "discrete_guide" 1728051580 0
+["pdflatex"] 1728088745 "/home/zsr/study_guides/discrete/discrete_guide.tex" "discrete_guide.pdf" "discrete_guide" 1728088747 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/zsr/study_guides/discrete/discrete_guide.tex" 1728051579 11164 15f869dceb4cd2fba8ed39aceef57ab8 ""
+  "/home/zsr/study_guides/discrete/discrete_guide.tex" 1728088743 16572 dae13041b546b309b7cfefcd50e04c8f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -24,6 +24,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -34,6 +35,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -91,10 +93,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723396930 7880859 2ccfb47b6943b3216b936d23e7f79ada ""
-  "discrete_guide.aux" 1728051580 6970 9c957c76147cd0ebefd100e987b88d74 "pdflatex"
-  "discrete_guide.out" 1728051580 7724 678a0807a5f6b7321195573d5c5d740d "pdflatex"
-  "discrete_guide.tex" 1728051579 11164 15f869dceb4cd2fba8ed39aceef57ab8 ""
-  "discrete_guide.toc" 1728051580 4357 89568e25de94f2517f6f837344811123 "pdflatex"
+  "discrete_guide.aux" 1728088746 6742 bb7a339ebda9d7faa4414b9933c64a31 "pdflatex"
+  "discrete_guide.out" 1728088746 7452 016ad8858996d4ae0691270c51d3768a "pdflatex"
+  "discrete_guide.tex" 1728088743 16572 dae13041b546b309b7cfefcd50e04c8f ""
+  "discrete_guide.toc" 1728088746 4210 178ee8ecd57f7401b496d201c95eaec0 "pdflatex"
   (generated)
   "discrete_guide.aux"
   "discrete_guide.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  4 OCT 2024 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  4 OCT 2024 20:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,59 +340,139 @@ l.187 \begin{eqnarray}
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.231 \noindent
-                \textbf{Object:} An element of a set. ex. $52$.]
-Overfull \hbox (4.84447pt too wide) in alignment at lines 234--241
+l.218 \newpage
+              ]
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+
+Overfull \hbox (2.94514pt too wide) in paragraph at lines 240--244
+\OT1/cmr/m/n/10 Statements quantifiers may be translated into idiomatic or mathematical English.
+ []
+
+
+Overfull \hbox (23.4729pt too wide) in paragraph at lines 240--244
+\OT1/cmr/m/n/10 different wording but same meaning) whereas mathematical english is a transliteration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
+
+ []
+
+[7]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \begin{eqnarray}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \begin{eqnarray}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \begin{eqnarray}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \begin{eqnarray}
+                      
+Overfull \hbox (4.84447pt too wide) in alignment at lines 279--286
  [][][] []
  []
 
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.254 \end{eqnarray}
-                    ]
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
-
- []
-
 [8
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.24}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.308 \end{eqnarray}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.24}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 \end{eqnarray}
-                    ] [9
+l.305 \end{eqnarray}
+                    ]
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.26}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.342 \end{document}
-                    ] (./discrete_guide.aux)
+l.359 \end{eqnarray}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.26}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.359 \end{eqnarray}
+                    ]
+Overfull \hbox (1.54936pt too wide) in paragraph at lines 383--387
+\OT1/cmr/bx/n/10 Theorems, Propositions, or Lemma\OT1/cmr/m/n/10 : If certain conditions called hypotheses,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--406
+
+ []
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.28}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.406 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 417--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--452
+
+ []
+
+[11] [12] (./discrete_guide.aux)
 Package rerunfilecheck Info: File `discrete_guide.out' has not changed.
-(rerunfilecheck)             Checksum: 678A0807A5F6B7321195573D5C5D740D;7724.
+(rerunfilecheck)             Checksum: 016AD8858996D4AE0691270C51D3768A;7452.
  ) 
 Here is how much of TeX's memory you used:
- 13312 strings out of 476091
- 255315 string characters out of 5794081
- 1869330 words of memory out of 5000000
- 33490 multiletter control sequences out of 15000+600000
- 520150 words of font info for 63 fonts, out of 8000000 for 9000
+ 13324 strings out of 476091
+ 255402 string characters out of 5794081
+ 1868330 words of memory out of 5000000
+ 33489 multiletter control sequences out of 15000+600000
+ 520496 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,356b,950s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on discrete_guide.pdf (9 pages, 157022 bytes).
+ 75i,12n,76p,356b,973s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on discrete_guide.pdf (12 pages, 178805 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

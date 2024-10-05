@@ -215,14 +215,59 @@ involved are true.
 
 \subsection{Arguments}
 
+\newpage
 \section{Quantifiers}
-\subsection{Motivating Quantifiers}
-\subsection{The Universe of Discourse}
-\subsection{The Universal Quantifier}
-\subsection{The Existential Quantifier}
+\subsection{Introducing Quantifiers}
+\textbf{The Universe of Discourse:} The set of all values that a variable can take on. It is often denoted as $\mathcal{U}$. \\
+
+\noindent \textbf{Quantifier}: A symbol that denotes for which values in the Universe of Discourse that some statement is true for. 
+There are two types.
+\begin{enumerate}
+    \item \textbf{Universal Quantifier}: Denoted by $\forall$. It denotes that a statement is true for all values.
+    \item \textbf{Existential Quantifier}: Denoted by $\exists$. It denotes that a statement is true for some value.
+\end{enumerate}
+
+\noindent \textbf{Note:} Quantifiers only apply to immediate statements.
+\begin{eqnarray} \nonumber
+    \forall x (P(x) \land Q(x)) &\neq& \forall x P(x) \land \forall x Q(x) 
+\end{eqnarray}
+
 \subsubsection{Uniqueness}
-\subsection{Bound Variables}
+$!\exists$ is a special case of the existential quantifier. It denotes that there is only
+one value that satisfies the statement.
+
+\subsubsection{Idomatic and Mathematical English}
+Statements quantifiers may be translated into idiomatic or mathematical English.
+The difference between the two is that idiomatic english is a translation (totally
+different wording but same meaning) whereas mathematical english is a transliteration
+(where you translate every part directly). \\
+
+\noindent There are no hard and fast rules about this, but generally, you would replace the quantifier
+directly with its definition and work from there. \\
+
+\noindent For example, take the statement $\forall x \exists y (P(x) \rightarrow Q(y))$.
+\begin{enumerate}
+    \item \textbf{Idiomatic English:} All $x$ have some $y$.
+    \item \textbf{Mathematical English:} For all $x$, there exists a $y$, such that $P(x)$ implies $Q(y)$.
+\end{enumerate}
+
+\subsection{Bound and Free Variables}
+\textbf{Bound Variable:} A variable that is bound, or within the scope of, some quantifier related to it. \\
+\textbf{Free Variable:} A variable that is not bound by any quantifier.
+
+\noindent \textbf{Example:} In the statement,
+
+\[ \forall x P(x, y) \]
+
+x is a bound variable, while y is a free variable.
+
 \subsection{Quantifier Negation}
+Quantifiers have some negation laws associated with them. They are fairly straightforward.
+
+\begin{eqnarray}
+    \neg \forall x P(x) &\equiv& \exists x \neg P(x) \\
+    \neg \exists x P(x) &\equiv& \forall x \neg P(x)
+\end{eqnarray}
 
 \section{Set Theory}
 \subsection{Defining Sets}
@@ -335,8 +380,83 @@ in the family.
 
 \section{Introductory Proof Strategies}
 \subsection{Theorems, Propositions, and Lemmas}
+\textbf{Theorems, Propositions, or Lemma}: If certain conditions called hypotheses,
+premises, or givens are true, then their conclusions are true. The difference between
+each of these is simply how important they are; theorems are the most important and 
+lemmas are the least important. \\
+
+\noindent \textbf{Proof:} Chain of mathematical statements, where each claim is fully
+justified using the hypotheses, logical axioms, something you have already proven, and
+basic arithmetic until a conclusion is reached. \\
+
+\noindent All proofs have the following structure:
+\begin{theorem}
+    Assumptions and a statement to be proven, say $P \rightarrow Q$.
+\end{theorem}
+\begin{proof}
+    A series of logical steps that lead to the conclusion.
+    Thus, $Q$ holds. Therefore, $P \rightarrow Q$.
+\end{proof}
+
 \subsection{Proof Writing Basics}
+To prove a statement, you must prove that \textit{all} instances
+are true, not just one. You must somehow show that for all inputs of the variable (within
+the bounds of our assumptions) to statement holds true. If there is even one instance where
+the statement evaluates to false, the statement false. \\ 
+
+\noindent There is no algorithm for proving a statement. There are a few key proof strategies
+that can help guide your thinking, but ultimately it takes trial and error. Proof writing
+typically occur in two stages.
+\begin{enumerate}
+    \item Scratch work: This is the trial and error stage where you try all the proof strategies.
+    in this stage, you may make use of any logical symbols you need to.
+    \item Final proof: This is when you formally write your proof. You should keep symbols like
+    quantifiers to a minimum, and write in plain English.
+\end{enumerate}
+
+\noindent During the scratch work stage, it's often suggested to organize your work into a given and goal
+column. The given is everything you are assuming about the problem and the goal column is what you
+are actually trying to prove. \\
+
+\noindent \textbf{Example:}
+\begin{lemma}
+    Suppose $x \in \mathbb{R}$ and $x > 0$. If $x^2 < 1$, then $x < 1$.
+\end{lemma}
+\textit{Scratch work:}
+\begin{center}
+\begin{tabular}{c | c}
+    Given & Goal \\
+    \hline
+    $x \in \mathbb{R}$ & $(x^2 < 1) \rightarrow (x < 1)$ \\
+    $x > 0$ & \\
+\end{tabular}
+\end{center}
+
 \subsection{Direct Proofs}
+Direct proofs are the simplest form of proof. Often times, we will use other methods to 
+make a statement easier to prove, so that we can use a direct proof on it. \\
+
+\noindent Direct proofs will often take the following form.
+\begin{theorem}
+    $P \rightarrow Q$
+\end{theorem}
+\begin{proof}
+    Assume that $P$ is true. [Arguments using logical laws, definitions, and basic arithmetic].
+\end{proof}
+
 \subsection{Proof by Contrapositive}
+Proof by contrapositive takes that statement that needs to be proven, then applies the
+conditional contrapositive law to it. The idea is, if you can prove the contrapositive
+of the statement, you can prove the original statement because the contrapositive and the
+original statement are equivalent. \\
+
+\noindent Contrapositive proofs will often take the following form.
+\begin{theorem}
+    $P \rightarrow Q$
+\end{theorem}
+\begin{proof}
+    We will argue this theorem by using the contrapositive. Suppose $\neg Q$. [A direct proof on
+    $\neg Q \rightarrow P$]. Thus, $\neg P$. Therefore, by the contrapositive law, $P \rightarrow Q$. 
+\end{proof}
 
 \end{document}

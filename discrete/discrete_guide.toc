@@ -21,30 +21,28 @@
 \contentsline {subsection}{\numberline {1.7}The Biconditional}{6}{subsection.1.7}%
 \contentsline {subsubsection}{\numberline {1.7.1}Definition}{6}{subsubsection.1.7.1}%
 \contentsline {subsubsection}{\numberline {1.7.2}The Truth of a Biconditional}{6}{subsubsection.1.7.2}%
-\contentsline {subsection}{\numberline {1.8}Arguments}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.8}Arguments}{6}{subsection.1.8}%
 \contentsline {section}{\numberline {2}Quantifiers}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Motivating Quantifiers}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}The Universe of Discourse}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}The Universal Quantifier}{7}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}The Existential Quantifier}{7}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Uniqueness}{7}{subsubsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.5}Bound Variables}{7}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Quantifier Negation}{7}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Set Theory}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Defining Sets}{7}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Important Sets}{7}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Basic Set Operations}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Intersection}{7}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.1}Introducing Quantifiers}{7}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Uniqueness}{7}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Idomatic and Mathematical English}{7}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Bound and Free Variables}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Quantifier Negation}{8}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Set Theory}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Defining Sets}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Important Sets}{8}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Basic Set Operations}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Intersection}{8}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Union}{8}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Difference}{8}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Symmetric Difference}{8}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Subsets, Proper and Improper}{8}{subsubsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.3}Families of Sets}{8}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Index Sets}{8}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}The Power Set}{9}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Operations on Families of Sets}{9}{subsubsection.3.3.3}%
-\contentsline {section}{\numberline {4}Introductory Proof Strategies}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Theorems, Propositions, and Lemmas}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Proof Writing Basics}{9}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Direct Proofs}{9}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Proof by Contrapositive}{9}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {3.2.3}Difference}{9}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Symmetric Difference}{9}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Subsets, Proper and Improper}{9}{subsubsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.3}Families of Sets}{9}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Index Sets}{9}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}The Power Set}{10}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Operations on Families of Sets}{10}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Introductory Proof Strategies}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Theorems, Propositions, and Lemmas}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Proof Writing Basics}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Direct Proofs}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Proof by Contrapositive}{11}{subsection.4.4}%
