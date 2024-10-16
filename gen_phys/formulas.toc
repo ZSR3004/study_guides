@@ -29,8 +29,14 @@
 \contentsline {subsubsection}{\numberline {3.3.1}The Elastic Coefficient}{10}{subsubsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.4}Gravity}{10}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Work, Energy, and Power}{11}{section.4}%
-\contentsline {section}{\numberline {5}Impulse and Momentum}{12}{section.5}%
-\contentsline {section}{\numberline {6}Simple Harmonic Motions (SMH)}{13}{section.6}%
+\contentsline {subsection}{\numberline {4.1}Energy}{11}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Conservation of Energy}{11}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.2}Work}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Types of Energy}{12}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Kinetic Energy}{12}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}(Gravitational) Potential Energy}{12}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Elastic (Potential) Energy}{12}{subsubsection.4.3.3}%
+\contentsline {section}{\numberline {5}Simple Harmonic Motions (SMH)}{13}{section.5}%
 \contentsline {section}{\numberline {A}Constants}{14}{appendix.A}%
 \contentsline {section}{\numberline {B}Translational and Rotational Counterparts}{15}{appendix.B}%
 \contentsline {section}{\numberline {C}Proofs}{16}{appendix.C}%

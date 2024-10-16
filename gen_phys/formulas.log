@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  29 SEP 2024 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  16 OCT 2024 01:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/zsr/wes/study_guides/gen_phys/formulas.tex
-(/home/zsr/wes/study_guides/gen_phys/formulas.tex
+**/home/zsr/study_guides/gen_phys/formulas.tex
+(/home/zsr/study_guides/gen_phys/formulas.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -360,23 +360,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--265
 
  []
 
-[10] [11] [12] [13] [14] [15] [16] (./formulas.aux)
+[10] [11
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.28}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.329 \subsubsection
+                    {Kinetic Energy}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.30}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.329 \subsubsection
+                    {Kinetic Energy}] [12] [13] [14] [15] [16] (./formulas.aux)
 Package rerunfilecheck Info: File `formulas.out' has not changed.
-(rerunfilecheck)             Checksum: 984E376CF30590BD57BDB8868484C792;6588.
+(rerunfilecheck)             Checksum: D58A0B1F236124FB7E41F2F2FF8B2B04;7518.
  ) 
 Here is how much of TeX's memory you used:
- 13576 strings out of 476091
- 268081 string characters out of 5794081
+ 13596 strings out of 476091
+ 268404 string characters out of 5794081
  1868330 words of memory out of 5000000
- 33736 multiletter control sequences out of 15000+600000
+ 33744 multiletter control sequences out of 15000+600000
  520496 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,76p,553b,1068s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,549b,1068s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on formulas.pdf (16 pages, 214216 bytes).
+Output written on formulas.pdf (16 pages, 221881 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 345 words of extra memory for PDF output out of 10000 (max. 10000000)
 

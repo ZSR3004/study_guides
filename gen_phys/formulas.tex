@@ -265,9 +265,98 @@ It follows then that it's units are $\frac{N}{m}$.
 
 \newpage
 \section{Work, Energy, and Power}
+\subsection{Energy}
+Energy, somewhat recursively, is the ability to do work (more on work
+in the next section). Energy is measured in \textit{joules} ($J$), which is equivalent to
+$Nm$.
+
+\subsubsection{Conservation of Energy}
+Energy cannot be created or destroyed, only transferred. That means
+that at some point A, the energy is equal to the energy at another
+point B (if the system encompasses everything).
+
+\begin{eqnarray} \nonumber
+    E_A = E_B
+\end{eqnarray}
+
+\noindent In the real world, energy can be "lost". As a block slows
+to rest due to friction, some of the block's energy is loss to heat.
+However, at a higher level, the energy is just transferred to the air,
+so the energy is actually not lost. This is a scenario that is mostly
+more complicated than what we will cover in class.
+
+
+\subsection{Work}
+Work (joules) is the measure of energy transferred to an object when it is 
+moved over a distance. The actual equation is as follows.
+
+\begin{eqnarray} \label{eq : true work}
+    \int \vec{F} \, \text{d}\vec{r}
+\end{eqnarray}
+
+\noindent Since this is technically not a calculus based course, we simplify
+this equation in the following way.
+
+\begin{eqnarray} \label{eq : work}
+    W = \vec{F} \cdot \Delta \vec{r}
+\end{eqnarray}
+
+\noindent From this, we can draw a few conclusion that can simplify 
+problem-solving. Expanded, we can rewrite the work formula as the
+following.
+
+\begin{eqnarray} \nonumber
+    \vec{F} \cdot \Delta \vec{r} = F \Delta r \cos(\theta_{\vec{F} \Delta \vec{r}})
+\end{eqnarray}
+
+\noindent We can take the $\cos(\theta_{\vec{F} \Delta \vec{r}})$ term. From this we
+can tell a few things. If the movement and the force are in the same
+direction, then the work is positive. If they are in the opposite
+direction, then work is negative. Last, if they are perpendicular,
+the work is zero.
+
+We can also determine the total work on a system by looking at its
+change in kinetic energy (more on that in the next section).
+
+\begin{eqnarray}
+    W_{total} = \Delta K_E
+\end{eqnarray}
+
+\subsection{Types of Energy}
+There are several types of energy, but there are a few that are especially
+important for this course. This section will go through each of these.
+
+\subsubsection{Kinetic Energy}
+Kinetic energy refers to the amount of energy in an object by
+virtue of its motion.
+
+\begin{eqnarray}
+    K_E = \frac{1}{2}mv^2
+\end{eqnarray}
+
+\subsubsection{(Gravitational) Potential Energy}
+Gravitational potential energy is the amount of stored energy in an
+object relative to various parts of its system.
+
+\begin{eqnarray}
+    P_E = mg \Delta \vec{r}
+\end{eqnarray}
+
+\noindent Where, $\Delta \vec{r}$ is the displacement from an arbitrarily
+chosen point. This will typically be a point that is chosen because it makes
+calculations easier.
+
+\subsubsection{Elastic (Potential) Energy}
+The amount of energy stored in a spring.
+
+\begin{eqnarray}
+    E_E = \frac{1}{2} k \Delta \vec{x} \, ^2
+\end{eqnarray}
+
+\noindent Where, $\vec{x} \, ^2$ is the displacement of the spring
+compared to where it in its equilibrium position.
 
 \newpage
-\section{Impulse and Momentum}
 
 \newpage
 \section{Simple Harmonic Motions (SMH)}

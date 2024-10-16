@@ -1,9 +1,9 @@
-PWD /home/zsr/wes/study_guides/gen_phys
+PWD /home/zsr/study_guides/gen_phys
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/zsr/wes/study_guides/gen_phys/formulas.tex
+INPUT /home/zsr/study_guides/gen_phys/formulas.tex
 OUTPUT formulas.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
