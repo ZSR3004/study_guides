@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1729054883 "/home/zsr/study_guides/gen_phys/formulas.tex" "formulas.pdf" "formulas" 1729054886 0
+["pdflatex"] 1729084077 "/home/zsr/study_guides/gen_phys/formulas.tex" "formulas.pdf" "formulas" 1729084079 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/zsr/study_guides/gen_phys/formulas.tex" 1729054883 19703 3bbb5a5011eb74242cff3c263a172e07 ""
+  "/home/zsr/study_guides/gen_phys/formulas.tex" 1729084077 19710 45288db7424182081ef48dc856946551 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -98,10 +98,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723396930 7880859 2ccfb47b6943b3216b936d23e7f79ada ""
-  "formulas.aux" 1729054885 7312 13371a7e0e194fd253a647dcf6d1eb36 "pdflatex"
-  "formulas.out" 1729054885 7518 d58a0b1f236124fb7e41f2f2ff8b2b04 "pdflatex"
-  "formulas.tex" 1729054883 19703 3bbb5a5011eb74242cff3c263a172e07 ""
-  "formulas.toc" 1729054885 3953 046aba21a4e88d7c55dac95100ea32db "pdflatex"
+  "formulas.aux" 1729084079 7312 13371a7e0e194fd253a647dcf6d1eb36 "pdflatex"
+  "formulas.out" 1729084079 7518 d58a0b1f236124fb7e41f2f2ff8b2b04 "pdflatex"
+  "formulas.tex" 1729084077 19710 45288db7424182081ef48dc856946551 ""
+  "formulas.toc" 1729084079 3953 046aba21a4e88d7c55dac95100ea32db "pdflatex"
   (generated)
   "formulas.aux"
   "formulas.log"
