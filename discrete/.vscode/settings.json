@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Biconditional"
-    ]
+    ],
+    "latex-workshop.latex.recipe.default": "first"
 }

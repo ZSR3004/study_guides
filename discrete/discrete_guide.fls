@@ -556,6 +556,8 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 OUTPUT discrete_guide.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT discrete_guide.aux
 INPUT ./discrete_guide.out
 INPUT ./discrete_guide.out

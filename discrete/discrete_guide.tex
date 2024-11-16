@@ -378,7 +378,7 @@ in the family.
 \noindent Another way to think about the intersection of sets is as follows.
 \[ A_1 \cup A_2 \cup ... \cup A_i \]
 
-\section{Introductory Proof Strategies}
+\section{Proof Strategies}
 \subsection{Theorems, Propositions, and Lemmas}
 \textbf{Theorems, Propositions, or Lemma}: If certain conditions called hypotheses,
 premises, or givens are true, then their conclusions are true. The difference between
@@ -432,7 +432,9 @@ are actually trying to prove. \\
 \end{tabular}
 \end{center}
 
-\subsection{Direct Proofs}
+\subsection{General Proof Strategies}
+
+\subsubsection{Direct Proofs}
 Direct proofs are the simplest form of proof. Often times, we will use other methods to 
 make a statement easier to prove, so that we can use a direct proof on it. \\
 
@@ -444,7 +446,7 @@ make a statement easier to prove, so that we can use a direct proof on it. \\
     Assume that $P$ is true. [Arguments using logical laws, definitions, and basic arithmetic].
 \end{proof}
 
-\subsection{Proof by Contrapositive}
+\subsubsection{Proof by Contrapositive}
 Proof by contrapositive takes that statement that needs to be proven, then applies the
 conditional contrapositive law to it. The idea is, if you can prove the contrapositive
 of the statement, you can prove the original statement because the contrapositive and the
@@ -458,5 +460,135 @@ original statement are equivalent. \\
     We will argue this theorem by using the contrapositive. Suppose $\neg Q$. [A direct proof on
     $\neg Q \rightarrow P$]. Thus, $\neg P$. Therefore, by the contrapositive law, $P \rightarrow Q$. 
 \end{proof}
+
+\subsubsection{Proof by Contradiction}
+A proof by contradiction requires you take all assumptions and prove the opposite of your conclusion. Then, you show that there must be some 
+contradiction that arises from these assumptions.
+
+\noindent Contradiction proofs usually take the following form.
+\begin{lemma}
+    $P \rightarrow Q$
+\end{lemma}
+\begin{proof}
+    We will argue this lemma via proof by contradiction. Suppose $P$. Further, assume towards a contradiction that $\neg Q$. [Show how there
+    is some contradiction that arises from these assumptions]. However, this proves a contradiction because [explain what the exact 
+    contradiction is]. Therefore, if $P$ then $Q$.
+\end{proof}
+
+\noindent This type of proof is often useful for when the conclusion we are seeking is a negative statement (that is $\neg P$). Then you can just assume
+the statement (that is $P$) and just find a contradiction.
+
+If you have a given in the form $P \rightarrow Q$, there are two rules we can apply:
+    \begin{enumerate}
+        \item \textit{Modus Ponens}: If you know $P$ and $P \rightarrow Q$ are true, then $Q$ is true.
+        \item \textit{Modus Tolen}: If you know $P \rightarrow Q$ is true but $Q$ is false, then $P$ must also be false.
+    \end{enumerate}
+
+\subsubsection{For all Proofs}
+If you have a proof with the universal quantifier, you present an "arbitrary" variable that is bound to it.
+
+\begin{lemma}
+    For all $x$, $P(x) \rightarrow Q(x)$.
+\end{lemma}
+\begin{proof}
+    Let $x$ be arbitrary. [Proof of $P(x)$]. Since $x$ was arbitrary, for all $x$, $P(x) \rightarrow Q(x)$.
+\end{proof}
+
+\noindent If you have a given that uses the universal quantifier, you can simply \textit{universal instantiation}. Just introduce an arbitrary
+value such that that given is true.
+
+\subsubsection{There Exists Proofs}
+For proofs with the existence quantifier, you will find a value that satisfies the claim, then present it in the proof by saying let $x = $ that value.
+
+\begin{lemma}
+    There exists an $x$ such that $P(x) \rightarrow Q$.
+\end{lemma}
+\begin{proof}
+    Let $x =$ the value you found in your scratch work. [Proof of $P(x) \rightarrow Q(x)$]. Thus, there exists an $x = $ that value such that
+    $P(x) \rightarrow Q(x)$.
+\end{proof}
+
+\noindent To use a given in the form of $\exists xP(x)$, we can use a strategy called \textit{existential instantiation}. To do this, you introduce a variable
+$x_0$ such that $P(x_0)$ is true. Thus, you can assume $P(x_0)$ for your givens.
+
+\begin{lemma}
+    Suppose $P(x)$ is true for specific values. Then, show $P(x) \rightarrow Q(x)$.
+\end{lemma}
+\begin{proof}
+    Suppose there exists $x_0$ such that $P(x_0)$ is true. [Proof of $P(x_0) \rightarrow Q(x_0)$].
+\end{proof}
+
+\subsubsection{There Exists a UNIQUE Proofs}
+To prove uniqueness, you must show that there exists a value to satisfy the claim, then show that there is only one value to satisfy it. You can split
+this into two parts. First, prove existence using the there existence proof strategies. Then, to show uniqueness you can do one of two things:
+\begin{enumerate}
+    \item Assume two values satisfy the claim, then show that these values are in fact equal to each other. In logical symbols, we are proving the 
+            following.
+            \begin{eqnarray*}
+                \forall x \forall y (P(x) \land P(y) \rightarrow x = y)
+            \end{eqnarray*}
+    \item Slightly more involved, but given the assumptions, prove that one value that can fulfill all necessary traits.
+\end{enumerate} 
+
+\subsection{Proofs Involving Conjunctions and Biconditionals}
+\subsubsection{Conjunction Proofs}
+\textbf{Conjunction}: A statement of the form $P \land Q$.
+For these proofs, you can use any of the proof strategies; however, you should do it in two parts: first prove $P$, then prove $Q$.
+
+\begin{lemma}
+    $P \land Q$
+\end{lemma}
+\begin{proof}
+    We will prove this proof in two parts. First, we will prove $P$, then we will prove $Q$.
+    [Proof of $P$].
+    [Proof of $Q$].
+    Having proven $P$ and $Q$, we have completed this proof.
+\end{proof}
+
+\subsubsection{Biconditional Proofs}
+To prove a biconditional, we can use the fact that,
+\begin{eqnarray*}
+    P \leftrightarrow Q \equiv (P \rightarrow Q) \land (Q \rightarrow P)
+\end{eqnarray*}
+
+\noindent Then, this becomes a conjunction problem, so we prove $P \rightarrow Q$, then prove $Q \rightarrow P$.
+
+\noindent There is a "special" case for biconditional proofs. It hinges off the following definition.
+\begin{eqnarray*}
+    P = Q \equiv (P \subset Q) \land (Q \subset P)
+\end{eqnarray*}
+
+\noindent From here, we can again use conjunction. This case is called \textbf{double containment}. \textbf{Containment} is just showing that
+some set is a subset of another set. So, double containment is just showing two cases of subsets, specific that the first set is a subset of the
+second set and vice versa.
+
+\subsection{Proofs Involving Disjunctions}
+\textbf{Disjunction}: A statement in the form $P \lor Q$. \\
+
+\noindent For a disjunction proof, prove the first case, then the second case. For a goal of $P \lor Q$, prove $P$ then $Q$. For a given of that form, prove your goal first by only assuming $P$ then only
+assuming $Q$.
+
+\section{Relations}
+\subsection{Ordered Pairs and Cartesian Products}
+\subsection{Relations}
+\subsection{Domain, Range, and Inversion}
+\subsubsection{Composition}
+\subsection{Equivalence Relations}
+
+\section{Functions}
+\subsection{Defining Functions}
+\subsubsection{Injective, Surjective, and Bijective}
+\subsubsection{Inverse Functions}
+\subsubsection{Closures}
+
+\newpage
+\appendix
+
+\section{Definitions}
+
+\begin{eqnarray*}
+    \text{\textbf{Cartesian Product:} } \{ (a,b) \; | \; a \in A \land b \in B \} \\
+    \text{\textbf{Domain:} } \{ b \in B \; | \; \exists b \in B((a,b) \in R) \}
+\end{eqnarray*}
 
 \end{document}

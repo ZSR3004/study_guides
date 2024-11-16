@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1728088745 "/home/zsr/study_guides/discrete/discrete_guide.tex" "discrete_guide.pdf" "discrete_guide" 1728088747 0
+["pdflatex"] 1731737947 "/home/zsr/study_guides/discrete/discrete_guide.tex" "discrete_guide.pdf" "discrete_guide" 1731737949 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/zsr/study_guides/discrete/discrete_guide.tex" 1728088743 16572 dae13041b546b309b7cfefcd50e04c8f ""
+  "/home/zsr/study_guides/discrete/discrete_guide.tex" 1731737947 22428 f4f43ad44b7a188a752eae006672b11c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -13,6 +13,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -93,10 +95,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723396930 7880859 2ccfb47b6943b3216b936d23e7f79ada ""
-  "discrete_guide.aux" 1728088746 6742 bb7a339ebda9d7faa4414b9933c64a31 "pdflatex"
-  "discrete_guide.out" 1728088746 7452 016ad8858996d4ae0691270c51d3768a "pdflatex"
-  "discrete_guide.tex" 1728088743 16572 dae13041b546b309b7cfefcd50e04c8f ""
-  "discrete_guide.toc" 1728088746 4210 178ee8ecd57f7401b496d201c95eaec0 "pdflatex"
+  "discrete_guide.aux" 1731737949 9523 ff3db49999f5e9b846a71cd47e29b254 "pdflatex"
+  "discrete_guide.out" 1731737949 10955 e003e1b14265fbc80c04e45b51303910 "pdflatex"
+  "discrete_guide.tex" 1731737947 22428 f4f43ad44b7a188a752eae006672b11c ""
+  "discrete_guide.toc" 1731737949 6130 785bf14a09c409240478896b440dad97 "pdflatex"
   (generated)
   "discrete_guide.aux"
   "discrete_guide.log"
