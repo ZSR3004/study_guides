@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  16 NOV 2024 01:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.11)  16 NOV 2024 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -282,16 +282,16 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./discrete_guide.toc [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
 \tf@toc=\write4
 \openout4 = `discrete_guide.toc'.
 
- [2]
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[3] [4] [5
+[4] [5] [6
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -336,7 +336,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.1.16}
 <to be read again> 
                    \relax 
 l.187 \begin{eqnarray}
-                       [6
+                       [7
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -366,7 +366,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--247
 
  []
 
-[7]
+[8]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.18}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -391,7 +391,7 @@ Overfull \hbox (4.84447pt too wide) in alignment at lines 279--286
  [][][] []
  []
 
-[8
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -406,7 +406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
-[9
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.26}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -436,7 +436,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--406
 
  []
 
-[10
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -456,7 +456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--454
 
  []
 
-[11]
+[12]
 Overfull \hbox (2.36066pt too wide) in paragraph at lines 465--467
 \OT1/cmr/m/n/10 A proof by contradiction requires you take all assumptions and prove the opposite
  []
@@ -471,7 +471,7 @@ Overfull \hbox (2.9913pt too wide) in paragraph at lines 473--476
 \OT1/cmr/m/n/10 that arises from these assumptions]. However, this proves a contradiction because
  []
 
-[12] [13]
+[13] [14]
 Overfull \hbox (12.62253pt too wide) in paragraph at lines 561--564
 \OT1/cmr/m/n/10 From here, we can again use conjunction. This case is called \OT1/cmr/bx/n/10 double containment\OT1/cmr/m/n/10 .
  []
@@ -481,23 +481,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
-[14] [15] (./discrete_guide.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--575
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
+
+ []
+
+[16]
+Overfull \hbox (1.75061pt too wide) in paragraph at lines 647--649
+\OT1/cmr/m/n/10 There is a very important theorem related to equivalence relations and partitions.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
+
+ []
+
+[17] [18] [19] (./discrete_guide.aux)
 Package rerunfilecheck Info: File `discrete_guide.out' has not changed.
-(rerunfilecheck)             Checksum: E003E1B14265FBC80C04E45B51303910;10955.
+(rerunfilecheck)             Checksum: 1D10F6B10E20A9231FCCB4F36103A8CC;14409.
  ) 
 Here is how much of TeX's memory you used:
- 13382 strings out of 476091
- 256266 string characters out of 5794081
+ 13439 strings out of 476091
+ 257119 string characters out of 5794081
  1868330 words of memory out of 5000000
- 33512 multiletter control sequences out of 15000+600000
- 521115 words of font info for 66 fonts, out of 8000000 for 9000
+ 33537 multiletter control sequences out of 15000+600000
+ 520496 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,396b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on discrete_guide.pdf (15 pages, 191796 bytes).
+ 75i,12n,76p,414b,982s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on discrete_guide.pdf (19 pages, 221344 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
- 545 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 713 words of extra memory for PDF output out of 10000 (max. 10000000)
 

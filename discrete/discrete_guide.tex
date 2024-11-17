@@ -570,25 +570,195 @@ assuming $Q$.
 
 \section{Relations}
 \subsection{Ordered Pairs and Cartesian Products}
+\textbf{Ordered pairs} are of the form $(x,y)$ and hold possible values for each variable. As the name suggests, the order in which they are in matters,
+i.e. $(x,y)$ is different from $(y,x)$. \\
+
+\noindent The \textbf{cartesian product} is the set of all ordered pairs such that the first element is in some set $A$ and the second element is in
+another set $B$. More formally,
+\begin{eqnarray*}
+    A \times B = \{ (a,b) \; | \; a \in A \land b \in B \}.
+\end{eqnarray*}
+
 \subsection{Relations}
-\subsection{Domain, Range, and Inversion}
-\subsubsection{Composition}
+Suppose $A$ and $B$ are sets. A \textbf{relation} $R$ from $A$ to $B$ is defined as,
+\begin{eqnarray*}
+    R \subseteq A \times B.
+\end{eqnarray*}
+
+\noindent There are a few ways to denote a relation. The most common is perhaps $(a,b) \in R$, but you may see other notation such as $xRy$ as well.
+
+\noindent Similar to functions, relations have a \textbf{domain} and \textbf{range}.
+\begin{eqnarray*}
+    Dom(R) &=& \{ a \in A \; | \; \exists b \in B ((a,b) \in R) \} \\
+    Ran(R) &=& \{ b \in B \; | \; \exists a \in A ((a, b) \in R) \}.
+\end{eqnarray*}
+
+\noindent The \textbf{inverse} of $R$ is defined as,
+\begin{eqnarray*}
+    R^{-1} &=& \{ (b,a) \in B \times A \; | \; (a,b) \in R \}.
+\end{eqnarray*}
+
+\noindent Last, we consider set composition. Suppose there are three sets $A$, $B$, $C$ and $R$ is a relation from $A$ to $B$ and $S$ is a relation
+from $B$ to $C$. We can define a composition of $S$ and $R$ as,
+\begin{eqnarray*}
+    S \circ R &=& \{ (a,c) \in A \times C \; | \; \exists b \in B ((a, b) \in R \land (b, c) \in S) \}.
+\end{eqnarray*}
+
 \subsection{Equivalence Relations}
+\subsubsection{A Primer}
+Equivalence relations are a special, very important subset of the cartesian product. Before explaining exactly what this set looks like, we 
+must understand a few possible traits of a relation. Not all sets follow these characteristics, but relations that have the following constructions
+have special names. Thus, the three most important types.
+\begin{eqnarray*}
+    \text{Reflexive} &=& \forall x \in A ((x,x) \in R) \\
+    \text{Symmetric} &=&  \forall x,y \in A((x,y) \in R \rightarrow (y,x) \in R) \\
+    \text{Transitive} &=& \forall x,y,z \in A(((x,y), (y,z) \in R) \rightarrow (x,z) \in R).
+\end{eqnarray*}
+
+\noindent There is another definition we will cover for a closely related type of set. A \textbf{pairwise disjoint} set is one such that
+\begin{eqnarray*}
+    \forall X, Y \in \mathcal{F}(X \neq Y \rightarrow X \cap Y = \varnothing).
+\end{eqnarray*}
+
+\subsubsection{Equivalence Relations and Classes}
+\textbf{Equivalence relations} are a subset of the cartesian product such that this set is reflexive, symmetric, and transitive. \\
+
+\noindent Let $R$ be an equivalence relation on a set $A$. Let $x \in A$. The \textbf{equivalence class} of $x$ with respect to $R$ is the set
+denoted by $[x]_R$ is defined by
+\begin{eqnarray*}
+    [x]_R &=& \{ y \in A \; | \; (x,y) \in R \}.
+\end{eqnarray*}
+
+\noindent The set of all equivalence classes of $A$ with respect to $R$ is called $A$ modulo $R$ and is denoted $A / R$. That is,
+\begin{eqnarray*}
+    A / R &=& \{ [x]_R \; | \; x \in A \}.
+\end{eqnarray*}
+
+\subsubsection{Partition of Sets}
+Let $A$ be a set and $\mathcal{F} \subseteq \mathcal{P}(A)$ (i.e. $\mathcal{F}$ is a subset of the subsets of $A$). Then, $\mathcal{F}$ is a
+partition of $A$ if the following properties hold:
+\begin{enumerate}
+    \item $\forall X \in \mathcal{F}, X \neq \varnothing$.
+    \item $\bigcup \mathcal{F} = A$.
+    \item $\mathcal{F}$ is pairwise disjoint.
+\end{enumerate}
+
+\subsubsection{The Fundamental Theorem of Equivalence Relations}
+There is a very important theorem related to equivalence relations and partitions. The theorems and related lemmas are written below. The
+proofs themselves are left as an excercise to the reader. \\
+
+\begin{lemma} \label{eq_relate_lemma_A}
+    Suppose $R$ is an equivalence relation on set $A$. Then, for all $x \in A$, $x \in [x]_R$.
+\end{lemma}
+
+\begin{lemma} \label{eq_relate_lemma_B}
+    Suppose $R$ is a relation on $A$. Then, for all $x \in A$ and $y \in A$, $y \in [x]_R$ if and only if $[y] =[x]$.
+\end{lemma}
+
+\begin{theorem} \label{eq_relate_theorem_1}
+    Suppose $R$ is an equivalence relation on a set $A$. Then, $A / R$ is a partition of $A$. 
+\end{theorem}
+
+\begin{lemma} \label{eq_relate_lemma_1}
+    Suppose $A$ is a set and $\mathcal{F}$ is a partition on $A$. Let,
+    \begin{eqnarray*}
+        R &=& \bigcup_{X \in \mathcal{F}} (X \times X).
+    \end{eqnarray*}
+\end{lemma}
+
+\begin{lemma} \label{eq_relate_lemma_2}
+    Suppose $A$ is a set $\mathcal{F}$ is a partition on $A$. Let $R$ be the equivalence relation determined by $\mathcal{F}$ (given in lemma 
+    \ref{eq_relate_lemma_1}). Suppose $X \in \mathcal{F}$ and $x \in X$. Then $[x]_R = X$.
+\end{lemma}
+
+\begin{theorem} \label{eq_relate_theorem_2}
+    Suppose $A$ is a set and $\mathcal{F}$ is partition of $A$. Then, there exists an equivalence relation $R$ on $A$ so that $A / R = \mathcal{F}$.
+\end{theorem}
+
+\noindent \textit{Commentary.} Use \textit{lemma \ref{eq_relate_lemma_A}} and \textit{lemma \ref{eq_relate_lemma_B}} to prove 
+\textit{theorem \ref{eq_relate_theorem_1}.} Use \textit{lemma \ref{eq_relate_lemma_1}} and \textit{lemma \ref{eq_relate_lemma_2}} to prove 
+\textit{theorem \ref{eq_relate_theorem_2}}.
 
 \section{Functions}
 \subsection{Defining Functions}
-\subsubsection{Injective, Surjective, and Bijective}
-\subsubsection{Inverse Functions}
-\subsubsection{Closures}
+A \textbf{function} is another type of subset of the cartesian product. Like equivalence relations, a set is only considered a function if it meets 
+certain criteria. The formal definition is as follows.
 
-\newpage
-\appendix
-
-\section{Definitions}
-
+\noindent Let $A$ and $B$ be sets. A function from $A$ to $B$ is a relation $F$ from $A$ to $B$ (so, $F \subseteq A \times B$), so that for all
+$a \in A$, there exists a unique element $b \in B$ so that $(a,b) \in F$. We can also write this in logical symbols as
 \begin{eqnarray*}
-    \text{\textbf{Cartesian Product:} } \{ (a,b) \; | \; a \in A \land b \in B \} \\
-    \text{\textbf{Domain:} } \{ b \in B \; | \; \exists b \in B((a,b) \in R) \}
+    \forall x \in A ( \exists ! y \in B((a,b) \in F)).
 \end{eqnarray*}
+
+\noindent \textbf{Notation.} If $F$ is a function from $A$ to $B$, then we can write it as $F: A \rightarrow B$. If $a \in A$ and $(a,b) \in F$ for a unique
+$b \in B$, then you can denote the value of $F$ at $a$ as $F(a)$. You can also write this as the image of $F$ at $a$ or $F$ of $a$.
+
+\subsubsection{Domain and Range}
+Let $F: A \rightarrow B$. Then,
+\begin{eqnarray*}
+    Dom(F) &=& A \\
+    Ran(F) &=& \{ F(a) \; | \; a \in A \}
+\end{eqnarray*}
+
+\subsubsection{Composition}
+Let $f : A \rightarrow B$ and $g: B \rightarrow C$. Then, $f \subseteq A \times B$ and $g \subseteq B \times C$. So,
+\begin{eqnarray*}
+    g \circ f \subseteq A \times C.
+\end{eqnarray*}
+
+\noindent Which can be more explicitly defined by
+\begin{eqnarray*}
+    g \circ f &=& \{ (a,c) \; | \; \exists b \in B ((a,b) \in f \land (b,c) \in g) \}.
+\end{eqnarray*}
+
+\noindent We can also write the image of $g$ of $f$ on $a$ by
+\begin{eqnarray*}
+    (g \circ f)(a) = c = g(b) = g(f(a)).
+\end{eqnarray*}
+
+\subsection{Injective, Surjective, and Bijective}
+\subsubsection{Injective or One-to-One}
+Let $f: A \rightarrow B$. $f$ is \textbf{injective/one-to-one/1-1} if it can be defined by one of the following,
+\begin{eqnarray*}
+    \forall a_1, a_2 \in A (f(a_1) = f(a_2) \rightarrow a_1 = a_2) \\
+    \forall a_1, a_2 \in A(a_1 \neq a_2 \rightarrow f(a_1) \neq f(a_2)).
+\end{eqnarray*}
+
+\subsubsection{Surjective or Onto}
+Let $f: A \rightarrow B$. $f$ is \textbf{surjective/onto} if it can be defined by one of the following.
+\begin{eqnarray*}
+    \forall b \in B \exists a \in A(f(a) = b) \\
+    Ran(f) = B.
+\end{eqnarray*}
+
+\subsubsection{Bijective}
+A function is \textbf{Bijective} if it is injective and surjective. In logical form:
+\begin{eqnarray*}
+    (\forall a_1, a_2 \in A (f(a_1) = f(a_2) \rightarrow a_1 = a_2)) \land (\forall b \in B \exists a \in A(f(a) = b)),
+\end{eqnarray*}
+\noindent or by using any of the equivalent equations defined above.
+
+\subsection{Inverse Functions}
+
+
+\subsection{Closures}
+
+\section{Mathematical Induction}
+\subsection{Proof by Induction}
+\subsection{Recursion}
+\subsection{Strong Induction}
+\subsection{Closures Part II}
+
+\section{Number Theory}
+\subsection{Greatest Common Divisor}
+\subsection{Prime Factorization}
+\subsection{Modular Arithmetic}
+\subsection{Euler's Theorem}
+\subsection{Public-Key Cryptography}
+
+\section{Infinite Sets}
+\subsection{Equinumerous Sets}
+\subsection{Countable and Uncountable Sets}
+\subsection{The Cantor-Schröder-Bernstein Theorem}
 
 \end{document}
