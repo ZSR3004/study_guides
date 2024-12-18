@@ -9,6 +9,7 @@
 \usepackage{babel}
 \usepackage{amsthm}
 \usepackage{siunitx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
@@ -16,9 +17,7 @@
 
 \begin{document}
 \maketitle
-
 \tableofcontents
-\newpage
 
 \section{Logical Symbols and Deductive Reasoning}
 \subsection{Variables and Statements}
@@ -29,7 +28,6 @@ person, number, etc. \\
 It is usually either in the form $P$ if it does not depend on a variable
 or $P(x)$ if the statement's truth depends on what the input is.
 
-\subsection{Connective Symbols}
 \subsection{Logical Laws}
 \subsubsection{Associative Law}
 \begin{eqnarray}
@@ -213,9 +211,6 @@ We can determine the truth of a biconditional via a truth table.
 As we can see, the biconditional only evaluates to true if (and only if) both statements
 involved are true.
 
-\subsection{Arguments}
-
-\newpage
 \section{Quantifiers}
 \subsection{Introducing Quantifiers}
 \textbf{The Universe of Discourse:} The set of all values that a variable can take on. It is often denoted as $\mathcal{U}$. \\
@@ -739,26 +734,57 @@ A function is \textbf{Bijective} if it is injective and surjective. In logical f
 \noindent or by using any of the equivalent equations defined above.
 
 \subsection{Inverse Functions}
+Given a function $f : A \rightarrow B$ is denoted as $f^{-1} : B \rightarrow A$. An inverse relation on $f$ may or may not
+be a function. The following theorem is \textit{EXTREMELY} important for our understanding of inverse function. Given one
+of the premises, this theorem allows us to extract a lot of information.
 
+\begin{theorem}
+    Suppose $f : A \rightarrow B$. Then the following statements are equivalent. 
+    \begin{enumerate}
+        \item $f$ is one-to-one and onto (bijective).
+        \item $f^{-1}: B \rightarrow A$ ($f^{-1}$ is a function rather than just a relation).
+        \item There is a function $g : B \rightarrow A$ such that $g \circ f = i_A$ and 
+        $f \circ g = i_B$.
+    \end{enumerate}
+\end{theorem}
 
-\subsection{Closures}
 
 \section{Mathematical Induction}
-\subsection{Proof by Induction}
-\subsection{Recursion}
+Mathematical induction is our final proof strategy. The general premise is as follows. \\
+
+\begin{lemma}
+    Given a property $P$, prove that $P$ applies to all natural numbers.
+\end{lemma}
+\begin{proof}
+    \textbf{\underline{Base Case:}} Prove that $P$ holds for the first natural number (usually $0$ or $1$).
+
+    \textbf{\underline{Inductive Step:}} 
+    \textbf{Inductive Hypothesis:} Assume that $P$ holds for some arbitrary natural number $k$.
+    
+    Prove that $P$ holds for $k+1$.
+
+    Thus, since $k$ was arbitrary, we have completed the proof.
+\end{proof}
+
+
 \subsection{Strong Induction}
-\subsection{Closures Part II}
+Strong induction is a particular type of induction. The big change is that in the inductive hypothesis, you assume that $P$ holds for all $0 < k < n$. 
 
-\section{Number Theory}
-\subsection{Greatest Common Divisor}
-\subsection{Prime Factorization}
-\subsection{Modular Arithmetic}
-\subsection{Euler's Theorem}
-\subsection{Public-Key Cryptography}
+For instance,
+\begin{lemma}
+    $\forall n \in \mathbb{N}P(n)$.
+\end{lemma}
+\begin{proof}
+    \textbf{\underline{Base Case:}} Prove that $P$ holds for the first natural number (usually $n_0 = 0$ or $n_0 = 1$).
 
-\section{Infinite Sets}
-\subsection{Equinumerous Sets}
-\subsection{Countable and Uncountable Sets}
-\subsection{The Cantor-Schröder-Bernstein Theorem}
+    \textbf{\underline{Inductive Step:}} 
+    \textbf{Inductive Hypothesis:} Let $k \in \mathbb{N}$ be arbitrary. Let $P$ hold for $k > n_0$.
+    
+    Prove that $P$ holds for $k+1$.
+
+    Thus, since $k$ was arbitrary, we have completed the proof.
+\end{proof}
+
+
 
 \end{document}
