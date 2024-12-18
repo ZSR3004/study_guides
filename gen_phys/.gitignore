@@ -1,0 +1,9 @@
+/old
+/.vscode
+
+gen_phys.aux
+gen_phys.fbd_latexmk
+gen_phys.fls
+gen_phys.log
+gen_phys.out
+gen_phys.synctex.gz
