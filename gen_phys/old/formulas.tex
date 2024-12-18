@@ -264,6 +264,8 @@ It follows then that it's units are $\frac{N}{m}$.
 \indent $r$ = The distance between the two objects \\
 
 \newpage
+\section{Torque}
+
 \section{Work, Energy, and Power}
 \subsection{Energy}
 Energy, somewhat recursively, is the ability to do work (more on work
@@ -359,7 +361,23 @@ compared to where it in its equilibrium position.
 \newpage
 
 \newpage
-\section{Simple Harmonic Motions (SMH)}
+\section{Simple Harmonic Motions (SHM)}
+SHM is an extremely fundamental concept in physics. Imagine a box-spring system on a surface with no friction. We can begin by writing Newton's
+second law for this system (note that we are only concerned with the $x$ direction, so we only use scalars).
+\begin{eqnarray*}
+    F_{net} &=& ma \\
+    F_{spring} &=& ma \\
+    -kx &=& ma \\
+    \frac{-kx}{m} &=& a \\
+    \frac{-kx}{m} &=& \ddot{x}
+\end{eqnarray*}
+
+Now, we have a differential equation which we can solve. There are a number of answers, but the ones most important are defined by
+\begin{eqnarray} \label{eq : SHM}
+    x(t) &=& Acos(\omega t + \phi_0) + D.
+\end{eqnarray}
+
+Which is a time function for the position of a SHM system. 
 
 \newpage
 \appendix
