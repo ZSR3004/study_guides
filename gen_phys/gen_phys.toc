@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Prerequisite Math}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Special Angles}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Basic Vector Operation}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Representing Vectors and Magnitude}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Vector Addition and Subtraction}{3}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Vector Multiplication}{3}{subsubsection.1.2.3}%

@@ -1,0 +1,89 @@
+\section{Prerequisite Math}
+
+Obviously physics needs a lot of math. This covers some of the higher level math you might not have seen before including a little multi-variable
+calculus and linear algebra.
+
+\subsection{Special Angles}
+
+Here are very common angles that may be asked of you. It's best to memorize these angles and their
+values when trigonometric functions are used on them. These angles are reference angles, and because
+of that, they only represent magnitude. You need to add the sign after you are done computing the value based
+on what is physically happening in the scenario/question.
+
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    Operation & $\ang{0} = 0 $ & $\ang{30} = \frac{\pi}{6}$ & $\ang{45} = \frac{\pi}{4}$ & $\ang{60} = \frac{\pi}{3}$ & $\ang{90} = \pi$ \\
+    \hline
+    $\sin (\theta)$ & 0 & $\frac{1}2$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ \\
+    \hline
+    $\cos (\theta)$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}2$ & $0$ \\
+    \hline
+    $\tan (\theta)$ & 0 & $\frac{1}{\sqrt{3}}$ & $1$ & $\sqrt{3}$ & undefined \\
+    \hline
+\end{tabular}
+\end{center}
+
+\subsection{Basic Vector Operation}
+A vector is a way to store numbers. In a physics sense, it's really just an arrow pointing from one place to another. Below are vector basics
+including how to add and multiply vectors. This covers all important vector operations done in this course. A normal number like \( 5 \) is
+called a scalar. In this class if something is not a vector, then it is a scalr.
+
+\subsubsection{Representing Vectors and Magnitude}
+Let $\vec{A}$ be a vector of 3 dimensions.
+\begin{equation}
+    \vec{A} =  A_x \hat{i} + A_y \hat{j} + A_z \hat{k}
+\end{equation}
+There are other ways to represent vectors, but this is the way we'll do it in this class. Each \(A_{something}\) literally just represents the
+$x$, $y$, or $z$ coordinate of the arrow's tip.
+
+A quick notational thing is the difference between \( \vec{|A|} \) and \( \vec{A} \). The first one represents the magnitude while the second one
+is the actual vector. If you think about our arrow representation, the magnitude of a vector is literally just how long it is. In a 2D space,
+if you think about a triangle, think about it as finding the hypotenuse from the length of the base and height. In fact, to find the magnitude
+of a vector from its normal form, you just use pythagorean's theorem. Below is that theorem in three dimensions.
+\begin{equation}
+    |\vec{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2} 
+\end{equation}
+
+\subsubsection{Vector Addition and Subtraction}
+\begin{equation}
+    \vec{A} \pm \vec{B} = \langle \vec{A}_x \pm \vec{B}_x, \; \vec{A}_y \pm \vec{B}_y, \; \vec{A}_z \pm \vec{B}_z \rangle = \vec{C}
+\end{equation}
+
+\subsubsection{Vector Multiplication}
+Vector multiplication comes in three flavors: multiplication by a scalar, the dot product, and the cross product. Scalar multiplication is multiplication
+between a scalar and a vector. The other two occur between two vectors. On a super high level, the dot product results in a scalar, whereas the 
+cross product creates another vector.
+
+\noindent \textbf{Scalar Multiplication.} Multiplying a vector by a scalar is by far the easiest vector multiplication. Suppose $n$ is a scalar (that
+is, $n$ is some number).
+\begin{equation}
+    n\vec{A} = (A_x \times n) \hat{i} + (A_y \times n) \hat{j} + (A_z \times n) \hat{k}
+\end{equation}
+You basically just distribute it over the vector.
+
+\noindent \textbf{The Dot Product.}
+There are two ways to calculate the dot product.
+\begin{equation}
+    \vec{A} \cdot \vec{B} = (\vec{A_x} \times \vec{B_x}) + (\vec{A_y} \times \vec{B_y}) + (\vec{A_z} \times \vec{B_z})
+\end{equation}
+\begin{equation}
+    \vec{A} \cdot \vec{B} = |\vec{A}| \times |\vec{B}|\cos{\theta}
+\end{equation}
+
+This is the second equation solved for theta, which often comes in handy.
+\begin{equation}
+    \theta = \cos^{-1} \left( {\frac{\vec{A} \cdot \vec{B}}{|\vec{A}| \times |\vec{B}|}} \right)
+\end{equation}
+
+\noindent \textbf{The Cross Product.}
+There are also two ways to calculate the cross product. A quick note: when you do the cross product of two 3D vectors, your resultant vector (the
+output) will be one dimensions smaller. 
+\begin{equation}
+    \vec{A} \times \vec{B} = |\vec{A}||\vec{B}| \sin \theta
+\end{equation}
+
+\begin{equation}
+    \vec{A} \times \vec{B} = (A_y \times B_z - A_z \times B_y)\hat{i} + (A_z \times B_x - A_x \times B_z)\hat{j} + (A_x \times B_y - A_y \times B_x)\hat{k} \\
+\end{equation}
+This formula will be used a lot less. In fact, you'll almost never use it.
