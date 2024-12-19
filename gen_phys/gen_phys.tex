@@ -12,6 +12,10 @@
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
 \begin{document}
 \maketitle
 \tableofcontents
@@ -38,5 +42,35 @@ Despite that, I've decided to group them simply \textit{because} they are simila
 \input{sections/energy.tex}
 
 \input{sections/shm}
+
+\newpage
+\appendix
+
+\section{Constants}\label{Appendix A}
+
+\begin{center}
+\begin{tabular}{c | c}
+    Pi & $\pi = 3.1415$\\
+    Euler's Constant & $e = 2.7182$ \\
+    Acceleration due to Earth's Gravity & $g = 9.89 \frac{m}{s^2} \approx 10 \frac{m}{s^2}$ \\
+\end{tabular}
+\end{center}
+
+\section{Translational and Rotational Counterparts}\label{Appendix B}
+
+\begin{center}
+\begin{tabular}{|c | c |}
+    \hline
+    Translational & Rotational \\
+    \hline \hline
+    $\vec{r} \; (m)$ & $\theta \; (rad)$ \\
+    $\vec{v} \; (\frac{m}{s}) $ & $\omega \; (\frac{rad}{s})$ \\
+    $\vec{a} \; (\frac{m}{s^2})$ & $\alpha \; (\frac{rad}{s^2})$ \\
+    $t \; (s)$ & $t \; (s)$ \\
+    \hline \hline
+    $m \; (\mathrm{kg})$ & $I \; (kgm)$\\
+    \hline
+\end{tabular}
+\end{center}
 
 \end{document}

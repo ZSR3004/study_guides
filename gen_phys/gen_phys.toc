@@ -53,3 +53,5 @@
 \contentsline {subsection}{\numberline {7.5}Simple Harmonic Motion (SHM)}{16}{subsection.7.5}%
 \contentsline {subsection}{\numberline {7.6}The Core Equations}{16}{subsection.7.6}%
 \contentsline {subsection}{\numberline {7.7}Period and Frequency}{17}{subsection.7.7}%
+\contentsline {section}{\numberline {A}Constants}{18}{appendix.A}%
+\contentsline {section}{\numberline {B}Translational and Rotational Counterparts}{18}{appendix.B}%
