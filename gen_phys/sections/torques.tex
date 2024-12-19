@@ -1,0 +1,50 @@
+\section{Torques}
+Torques are the rotational equivalent to forces.
+If forces cause translational acceleration, motivating an object to move translationally, then torque
+motivates objects to move rotationally. Before we talk about torques, we'll first discuss the mass equivalent for rotational motion, then talk about
+Newton's Rotational Laws and a few important scenarios.
+
+To law a few ground rules, we represent torques with $\tau$ in $Nm$. The counter-clockwise direction is positive and the clockwise direction is negative.
+
+\subsection{Moments of Inertia}
+If mass is a measurement of how inert something is that means it measures how difficult something is to move (or otherwise to gain momentum). Likewise,
+the \textbf{moment of inertia} measures how difficult it is to rotate something. More intuitively, it measures how far apart mass is spread from
+something's pivot (the point it spins around). If two things have the same mass and one is packed closer, then it will have a smaller moment of inertia
+compared to the second object who has the same mass spread across a larger distance (for example, if you have two balls with the same mass, the smaller
+one has a smaller moment of inertia because the mass is spread out less). We represent the moment of inertia with the variable $I$ and its units are
+$kgm^2$.
+
+The moment of inertia depends on the shape of an object, so each one has a different formula (you use a different formula to calculate a disc's moment
+of inertia than for a ball). These will always be given, so I won't bother detailing them here.
+
+\subsubsection{The Parallel Axis Theorem}
+This theorem is used to find the moment of inertia for an object who's pivot axis has moved but stayed parallel to itself. For example, if spin a ball
+on my finger, then its axis is straight up (this would be $I_{original}$). If I instead decide to spin it by spinning in a circle with my arms out, then 
+its axis is moved away from the center, but is still parallel (that is, straight up). To calculate the new moment of inertia, we can use the following
+equation.
+\begin{equation}
+    I_{new} = I_{original} + md^2
+\end{equation}
+Where,
+$m$ is the object's mass and \\
+$d$ is the distance the axis moved.
+
+\subsection{Newton's Rotational Laws}
+Just like with forces, we have three laws to consider. We'll look at them out of order since the second one is more involved (and arguably important)
+than the others. The same constraint that this must happen in an inertial reference frame applies.
+
+\subsubsection{Newton's First Rotational Law}
+In an inertial reference frame, if there is no torque acting on an object, then objects at rest stay at rest and objects in motion stay in motion with 
+a constant velocity.
+
+\subsubsection{Newton's Third Rotational Law}
+In an inertial reference frame, torques are met with an equal and opposite reaction.
+\begin{equation}
+    \tau_{A on B} = - \tau_{B on A}
+\end{equation}
+
+\subsubsection{Newton's Second Rotational Law}
+This is the same as Newton's Second Translation Law.
+\begin{equation}
+    \tau_{net} = I \alpha
+\end{equation}
