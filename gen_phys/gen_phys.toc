@@ -1,8 +1,19 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Prerequisite Math}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Special Angles}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Basic Vector Operation}{3}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Representing Vectors and Magnitude}{3}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Vector Addition and Subtraction}{4}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Vector Multiplication}{4}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {2}Prerequisite Math}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Special Angles}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Basic Vector Operation}{2}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Representing Vectors and Magnitude}{2}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Vector Addition and Subtraction}{3}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Vector Multiplication}{3}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3}Kinematics}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Primer: Translational and Rotational Motion}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Primary Kinematic Equations}{4}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Special Case: Constant Acceleration}{4}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Relative Kinematics Based on Postion}{5}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Rotational Kinematics}{5}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Introducing Rotational Kinematics}{5}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Primary Rotational Kinematics Equations}{5}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Special Case: Constant Rotational Acceleration}{6}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Period and Frequency}{6}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Centripedal Acceleration}{6}{subsubsection.3.3.5}%
