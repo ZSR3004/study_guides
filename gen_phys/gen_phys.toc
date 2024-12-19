@@ -32,13 +32,21 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Newton's First Rotational Law}{11}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Newton's Third Rotational Law}{11}{subsubsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {5.2.3}Newton's Second Rotational Law}{11}{subsubsection.5.2.3}%
-\contentsline {section}{\numberline {6}Work, Energy, and Power}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Energy}{11}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Conservation of Energy}{12}{subsubsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.2}Work}{12}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Types of Energy}{12}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Kinetic Energy}{12}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}(Gravitational) Potential Energy}{13}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}Elastic (Potential) Energy}{13}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Total Energies}{13}{subsubsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.4}Power}{14}{subsection.6.4}%
+\contentsline {section}{\numberline {6}Momentum}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Conservation of Momentum}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Types of Collisions}{12}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Elastic Collisions}{12}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Inelastic Collisions}{12}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Impulse and Newton's Second Law Revisited}{13}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Angular Momentum}{13}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Angular Momentum of an Object Moving Linearly}{13}{subsubsection.6.4.1}%
+\contentsline {section}{\numberline {7}Work, Energy, and Power}{14}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Energy}{14}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Conservation of Energy}{14}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Work}{14}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Types of Energy}{14}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Kinetic Energy}{15}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}(Gravitational) Potential Energy}{15}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Elastic (Potential) Energy}{15}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Total Energies}{15}{subsubsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.4}Power}{16}{subsection.7.4}%
