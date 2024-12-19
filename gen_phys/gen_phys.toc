@@ -37,6 +37,8 @@
 \contentsline {subsubsection}{\numberline {6.1.1}Conservation of Energy}{12}{subsubsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.2}Work}{12}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Types of Energy}{12}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Kinetic Energy}{13}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1}Kinetic Energy}{12}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}(Gravitational) Potential Energy}{13}{subsubsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.3}Elastic (Potential) Energy}{13}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Total Energies}{13}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}Power}{14}{subsection.6.4}%

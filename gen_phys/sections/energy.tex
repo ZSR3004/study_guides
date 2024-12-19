@@ -1,0 +1,112 @@
+\section{Work, Energy, and Power}
+\subsection{Energy}
+Energy, somewhat recursively, is the ability to do work (more on work
+in a little bit). Energy is measured in \textit{joules} ($J$), which is equivalent to
+$Nm$.
+
+\subsubsection{Conservation of Energy}
+Energy cannot be created or destroyed, only transferred. That means
+that at some point A, the energy is equal to the energy at another
+point B (if the system encompasses everything).
+
+\begin{eqnarray} \nonumber
+    E_A = E_B
+\end{eqnarray}
+
+\subsection{Work}
+Work (joules) is the measure of energy transferred to an object when it is 
+moved over a distance. The actual equation is as follows.
+
+\begin{eqnarray} \label{eq : true work}
+    \int \vec{F} \, \text{d}\vec{r}
+\end{eqnarray}
+
+\noindent Since this is technically not a calculus based course, we simplify
+this equation in the following way.
+
+\begin{eqnarray} \label{eq : work}
+    W = \vec{F} \cdot \Delta \vec{r}
+\end{eqnarray}
+
+\noindent From this, we can draw a few conclusion that can simplify 
+problem-solving. Expanded, we can rewrite the work formula as the
+following.
+
+\begin{eqnarray} \nonumber
+    \vec{F} \cdot \Delta \vec{r} = F \Delta r \cos(\theta_{\vec{F} \Delta \vec{r}})
+\end{eqnarray}
+
+We can take the $\cos(\theta_{\vec{F} \Delta \vec{r}})$ term. From this we
+can tell a few things. If the movement and the force are in the same
+direction, then the work is positive. If they are in the opposite
+direction, then work is negative. Last, if they are perpendicular,
+the work is zero.
+
+\subsection{Types of Energy}
+There are several types of energy, but there are a few that are especially
+important for this course. This section will go through each of these.
+
+\subsubsection{Kinetic Energy}
+Kinetic energy refers to the amount of energy in an object by
+virtue of its motion.
+
+\begin{equation}
+    K = \frac{1}{2}mv^2 = \frac{p^2}{2m}
+\end{equation}
+
+We also have the rotational equivalent. This is the only energy type with a rotational equivalent.
+\begin{equation}
+    K_{Rotational} = \frac{1}{2} I \omega ^2
+\end{equation}
+
+\subsubsection{(Gravitational) Potential Energy}
+Gravitational potential energy is the amount of stored energy in an
+object relative to various parts of its system.
+
+\begin{eqnarray}
+    U_g = mg \Delta \vec{r}
+\end{eqnarray}
+
+\noindent Where, $\Delta \vec{r}$ is the displacement from an arbitrarily
+chosen point. This will typically be a point that is chosen because it makes
+calculations easier.
+
+\subsubsection{Elastic (Potential) Energy}
+The amount of energy stored in a spring.
+
+\begin{eqnarray}
+    U_s = \frac{1}{2} k \Delta \vec{x} \, ^2
+\end{eqnarray}
+Where, $\Delta \vec{x} \, ^2$ is the displacement of the spring
+compared to where it in its equilibrium position.
+
+\subsubsection{Total Energies}
+We can write the total potential of a system as
+\begin{equation}
+    U = U_g + U_s
+\end{equation}
+
+We'll quickly relate this back to force with this equation.
+\begin{equation}
+    F = - \frac{\text{d}U}{\text{d}x}
+\end{equation}
+
+For conservative systems, we can also write the following relationships.
+\begin{eqnarray}
+    \Delta K = - \Delta U \\
+    E_{Mechanical} = K + U
+\end{eqnarray}
+
+In the real world, energy can be "lost". As a block slows to rest due to friction, some of the block's energy is loss to heat. However, at a higher 
+level, the energy is just transferred to the air, so the energy is actually not lost. This is a scenario that is mostly more complicated than what we 
+will cover in class. However, we still have tools to figure out how much energy was lost from friction and such. In these types of scenarios its often
+helpful to use the \textbf{Work-Energy Theorem}. 
+\begin{equation}
+    \Delta K = \Delta W_{Conservative} + \Delta W_{Non-Conservative} = \Delta U + \Delta W_{Non-Conservative}
+\end{equation}
+
+\subsection{Power}
+The last thing we'll talk about is \textbf{power}, which is change in work over time. We'll measure this in $\frac{J}{s}$ or Watts ($W$).
+\begin{equation}
+    P = \frac{W}{t}.
+\end{equation}
