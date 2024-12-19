@@ -50,3 +50,6 @@
 \contentsline {subsubsection}{\numberline {7.3.3}Elastic (Potential) Energy}{15}{subsubsection.7.3.3}%
 \contentsline {subsubsection}{\numberline {7.3.4}Total Energies}{15}{subsubsection.7.3.4}%
 \contentsline {subsection}{\numberline {7.4}Power}{16}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Simple Harmonic Motion (SHM)}{16}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}The Core Equations}{16}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Period and Frequency}{17}{subsection.7.7}%

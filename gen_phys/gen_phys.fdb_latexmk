@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1734596678 "/home/zsr/study_guides/gen_phys/gen_phys.tex" "gen_phys.pdf" "gen_phys" 1734596680 0
+["pdflatex"] 1734597454 "/home/zsr/study_guides/gen_phys/gen_phys.tex" "gen_phys.pdf" "gen_phys" 1734597456 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/zsr/study_guides/gen_phys/gen_phys.tex" 1734596272 1520 0ad509ca5d4016d728b2b5ebdebd509b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -103,17 +103,17 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723396930 7880859 2ccfb47b6943b3216b936d23e7f79ada ""
-  "gen_phys.aux" 1734596680 8107 3393b49e6faf0c65b29b45350bf3afda "pdflatex"
-  "gen_phys.out" 1734596680 9216 9d066e58f120317464cbdcfceb4515b6 "pdflatex"
+  "gen_phys.aux" 1734597456 8633 3e6c09103eec512ba4d5cca252ec8cc2 "pdflatex"
+  "gen_phys.out" 1734597456 9747 f9b44b18da48aca3a3daa083b0d7af55 "pdflatex"
   "gen_phys.tex" 1734596272 1520 0ad509ca5d4016d728b2b5ebdebd509b ""
-  "gen_phys.toc" 1734596680 4771 01a83fd0e6bedbdc8b20fad9b04892eb "pdflatex"
+  "gen_phys.toc" 1734597456 5038 ef3ef492193f8549ee28e2a8f542c446 "pdflatex"
   "images//linear_L.png" 1734596194 4466 ce27b70b29cf197f21d7e35158c17e27 ""
   "sections/energy.tex" 1734594503 4010 7c309ec3d82d52a94ae72516b09a93cf ""
   "sections/forces.tex" 1734589129 5491 28ffadb106a6ebfd86d1ef8723dfafe9 ""
   "sections/kinematics.tex" 1734588387 6897 c93909aff54d11dcfad0c93826c783c2 ""
   "sections/momentum.tex" 1734596673 3905 bcb91d5f52970c53241a9c3d7b506095 ""
   "sections/prereq_math.tex" 1734586394 4547 04866a59a9bc1da72312a07645b3c59c ""
-  "sections/shm.tex" 1734504732 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "sections/shm.tex" 1734597452 2716 848617cbfa20834402083988932101cc ""
   "sections/torques.tex" 1734590957 3680 67554654220c66886f7c73096f0a9cec ""
   (generated)
   "gen_phys.aux"

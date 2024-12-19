@@ -1,0 +1,54 @@
+\subsection{Simple Harmonic Motion (SHM)}
+SHM is an extremely fundamental concept in physics. The two main types of SHM systems we will look at are mass-spring systems and simple pendulums. We'll
+start by deriving the core equations for SHM since they'll come up again and again, then we'll talk about period and frequency. We didn't cover this
+topic much when I took the class because we ran short on time, so this might not be as holistic as other sections.
+
+\subsection{The Core Equations}
+Imagine a mass-spring system on a surface with no friction. We can begin by writing Newton's
+second law for this system (note that we are only concerned with the $x$ direction, so we only use scalars).
+\begin{eqnarray*}
+    F_{net} &=& ma \\
+    F_{spring} &=& ma \\
+    -kx &=& ma \\
+    \frac{-kx}{m} &=& a \\
+    \frac{-kx}{m} &=& \ddot{x}
+\end{eqnarray*}
+(We did a little notational trick here. $\dot{x}$ is the derivative of $x$ with respect to time, or velocity. $\ddot{x}$ is the derivative with respect
+to time twice, or acceleration).
+
+Now, we have a differential equation which we can solve. There are a number of answers, but the ones most important are defined by
+\begin{eqnarray} \label{eq : SHM}
+    x(t) &=& Acos(\omega t + \phi_0).
+\end{eqnarray}
+
+By taking the derivative, we can also talk about velocity and acceleration.
+
+\begin{eqnarray} \label{eq : SHMav}
+    \dot{x}(t) &=& -A \omega sin(\omega t + \phi_0) \\
+    \ddot{x}(t) &=& -A \omega^2 cos(\omega t + \phi_0)
+\end{eqnarray}
+
+\subsection{Period and Frequency}
+We can write the angular frequency as,
+\begin{equation}
+    \omega = w \pi f.
+\end{equation}
+
+Why, yes! It is confusing that it uses the $\omega$ symbol and has the units $\frac{rads}{s}$. No, it is not the same thing as angular frequency.
+The two values are VERY closely related. I can't do the explanation justice because I don't fully understand it, so I won't try at risk of confusing you,
+dear reader. Just know that this is a thing you'll need to calculate.
+
+We can also determine the period of the two systems we're interested in. For a pendulum, we can record how long it takes to come back to the starting
+point with the following equation.
+\begin{equation}
+    T = 2 \pi \sqrt{\frac{l}{g}}
+\end{equation}
+
+Where, $l$ is the length of the pendulum's string. We take $g$ as the standard gravitational acceleration constant, but note that it would be different if
+the problem was on Mars or some other planet (since the gravity would impact the pendulum falling differently). Notice how mass does not impact the
+period at all.
+
+We can also calculate the period of a mass-spring system with the following equation.
+\begin{equation}
+    T = 2 \pi \sqrt{\frac{m}{k}}.
+\end{equation}
