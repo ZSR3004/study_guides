@@ -1,0 +1,77 @@
+\section{Forces}
+\subsection{Reference Frames}
+Reference frames, especially inertial reference frames, are an extremely important concept in the General Physics course. For the most part, homework 
+and exam problems will exist within inertial reference frames, but it is still important to understand what a reference frame is and they relate to 
+Newton's laws. \\
+
+\noindent This subsection will discuss in the broadest terms what reference frames are. There is a lot more nuanced especially as you move into special 
+relatively, but for the purposes of this study guide, I have boiled the concept down to the basic version we need to understand for this course.
+
+\noindent \textbf{Reference Frame:} Refers to the parameters of observation, such as how the axes are situated or when $t=0$.
+
+\noindent \textbf{Inertial Reference Frame:} Refers to a reference frame in which Newton's laws hold true. That is, we can identify every force 
+acting on an object and determine that motion is consistent with Newton's three laws. If you find yourself in a non-inertial reference frame, you 
+may do one of two things.
+\begin{enumerate}
+    \item Accept that you are in a non-inertial reference frame and calculate motion without Newton's laws.
+    \item Accept that you are in a non-inertial reference frame, but add a "fake" or "non-existent" force which allows you to use Newton's laws.
+\end{enumerate}
+\textit{Example:} Say a person is in a car that moves along a curved road. There are two possible observation points, otherwise known as reference frames. The first is an outside observer standing at the side of the road, and the second frame is of the person sitting inside of the car.
+\begin{enumerate}
+    \item The observer on the side of the road \textit{is} in an inertial reference frame: \\
+    From the observer's point of view, all motion can be explained using Newton's laws. Put simply, the observer can determine that the car is moving, that it is being pulled into the curve by centripetal acceleration (friction on the tires).
+    \item The person inside the car \textit{is not} in an inertial reference frame: \\
+    The person inside the car has a different perspective. From their reference frame, the road is moving, not them. Due to this, they cannot determine that they have a tangential velocity to the curve of the road, and therefore, they cannot explain why they are being pushed off the road.
+    \begin{enumerate}
+        \item They can either accept they are in a non-inertial reference frame and make calculations accordingly (without Newton's laws), or
+        \item Accept they are in a non-inertial reference frame, but add a "fake" force pushing them outside the circle so that Newton's second law holds true. This allows them to use all of Newton's laws.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Newton's Laws}
+\subsubsection{Newton's First Law: Inertia}
+\textbf{Definition:} In an inertial frame of reference, if there is \textit{no} force on an object, then a stationary object remains at rest and '
+an object in motion stays in motion with a constant velocity, $\vec{v}$.
+
+\noindent \textbf{Sloadism Definition:} If there's no force on an object, then its movement doesn't change. If its stopped, it will stay stopped, if 
+its moving, it'll keep moving at the same speed.
+
+\subsubsection{Newton's Second Law: Force}
+\textbf{Formal Definition:} In an inertial-reference frame, for an object of momentum $\vec{p}$, the net force is the change in momentum over time.
+
+\noindent \textbf{Sloadism Definition:} The net force on an object is its impulse over time (or mass times acceleration).
+
+\begin{equation}
+    F_{net} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = m\vec{a}
+\end{equation} 
+
+\noindent{Where,} \\
+$p = $ momentum of the object in newton-meters. \\
+$t = $ time in seconds. \\
+$m = $ the mass of the object in kilograms. \\
+$a = $ the acceleration of the object in meters per second. \\
+
+\subsubsection{Newton's Third Law: Action \& Reaction}
+\textbf{Definition:} In an inertial reference frame, $F_{\mathrm{A \, on \, B}} = -F_{\mathrm{B \, on \, A}}$.
+
+\noindent \textbf{Sloadism Definition:} Every action has an equal and opposite reaction.
+
+Maybe add that thing about how the book and the table are not normal.
+
+\subsection{Hooke's Law}
+In physics, a lot of classic problems revolve around springs. Naturally, that means springs behave in a unique (but simple) way when it comes to
+forces. We'll only be considering ideal springs. That is massless springs with a fixed stretchiness. Hooke's law is the equation we use to determine 
+the amount of force it takes to stretch or compress a string (and by Newton's Third Law, how much force the spring is exerting on whatever its pushing
+or pulling against). It is as follows:
+\begin{equation}\label{eq : hooke}
+    \vec{F}_{spring} = k \Delta s
+\end{equation}
+
+\noindent Where, \\
+\indent $k$ is the elastic coefficient \\
+\indent $\Delta s$ is the distance the spring has moved. You'll have to determine the direction just as you would any other force. You can think of
+the direction of pointing towards the center (so if its stretched and you have a typical $x$ and $y$ axis, then the direction is the negative one).
+
+\subsubsection{The Elastic Coefficient}
+The elastic coefficient $k$ is a constant based on the spring/material that is being used. It describes how many newtons it takes to stretch or 
+compress that material by one meter. It follows then that it's units are $\frac{N}{m}$.

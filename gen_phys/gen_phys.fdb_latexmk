@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1734588389 "/home/zsr/study_guides/gen_phys/gen_phys.tex" "gen_phys.pdf" "gen_phys" 1734588390 0
+["pdflatex"] 1734589158 "/home/zsr/study_guides/gen_phys/gen_phys.tex" "gen_phys.pdf" "gen_phys" 1734589159 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/zsr/study_guides/gen_phys/gen_phys.tex" 1734586411 1418 5d160a8040e9fa97146b95c8e711890a ""
+  "/home/zsr/study_guides/gen_phys/gen_phys.tex" 1734589157 1440 c5bd22d62b2694682ad8bb82e34eda77 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -97,15 +97,16 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723396930 7880859 2ccfb47b6943b3216b936d23e7f79ada ""
-  "gen_phys.aux" 1734588390 3581 afc11efd48c0f7217d92a9f6ff8ee26b "pdflatex"
-  "gen_phys.out" 1734588390 3629 01067f5b6c6ac6a8562873abcde304ce "pdflatex"
-  "gen_phys.tex" 1734586411 1418 5d160a8040e9fa97146b95c8e711890a ""
-  "gen_phys.toc" 1734588390 1773 a99d38405c2e77b0a6ca31df88f57400 "pdflatex"
+  "gen_phys.aux" 1734589159 4688 eeb1d153f5bc5062ac302aa1b2dfe5cb "pdflatex"
+  "gen_phys.out" 1734589159 4965 b2bb5e8d7f6e489e291a42290b433151 "pdflatex"
+  "gen_phys.tex" 1734589157 1440 c5bd22d62b2694682ad8bb82e34eda77 ""
+  "gen_phys.toc" 1734589159 2491 6c5f410ec6ff6e2db9df69603b955b4d "pdflatex"
   "sections/energy.tex" 1734502627 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "sections/forces_torques.tex" 1734502597 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "sections/forces.tex" 1734589129 5491 28ffadb106a6ebfd86d1ef8723dfafe9 ""
   "sections/kinematics.tex" 1734588387 6897 c93909aff54d11dcfad0c93826c783c2 ""
   "sections/prereq_math.tex" 1734586394 4547 04866a59a9bc1da72312a07645b3c59c ""
   "sections/shm.tex" 1734504732 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "sections/torques.tex" 1734589141 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "gen_phys.aux"
   "gen_phys.log"
