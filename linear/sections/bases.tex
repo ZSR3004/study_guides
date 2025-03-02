@@ -1,0 +1,95 @@
+\section{Bases}
+
+\subsection{Linear Combinations}
+\begin{definition}
+    Let $V$ be a vector space over $\F$ and $v_1, ..., v_p \in V$ be a list of vectors. A \textbf{linear combination} of these vectors is a sum of the
+    form,
+    \begin{align*}
+        \ga_1 v_1 + \cdots \ga_p v_p &= \sum_{i = 1}^{p} \ga_i v_i \text{ where $\ga_i \in \F$}
+    \end{align*}
+\end{definition}
+
+\subsection{Linear Independence}
+\begin{definition}
+    A linear combination, $\sum_{i = 1}^{p} \ga_i v_i$ is said to be the \textbf{trivial combination (or trivial case)} if $a_i = 0$ for all $i$.
+\end{definition}
+
+\begin{definition}
+    A system of vectors is \textbf{linearly independent} if only the trivial linear combination of $v_1, ..., v_p$ is equal to the zero vector. That is, 
+    if
+    \begin{align*}
+        \sum_{i = 1}^{p} \ga_i v_i &= \zV
+    \end{align*}
+
+    Then, $\ga_1 = \ga_2 = \cdots = \ga_p = 0 \in \F$.
+\end{definition}
+
+\begin{definition}
+    A system of vectors is \textbf{linearly dependent} if it is not linearly independent. We can represent this in two ways. First, there exists a 
+    linear combination of this list for the zero vector such that the linear combination is not the trivial one.
+    \begin{align*}
+        \sum_{i = 1}^{p} \ga_i v_i &= \zV \text{ but there exists a $\ga_i$ such that $\ga_i \neq 0$}
+    \end{align*}
+
+    Second, that a list is linearly dependent if and only if one of the vectors in the list can be written as a linear combination of the other 
+    vectors in that list.
+    \begin{align*}
+        v_k &= \sum_{\substack{i = 1 \\ i \neq k}}^{p} \ga_i v_i \\
+        &= \ga_1 v_1 + \cdots + \ga_{k - 1} v_{k - 1} + \ga_{k + 1} v_{k + 1} + \cdots + \ga_p v_p
+    \end{align*}
+
+    Technically, this second definition follows from Proposition 2.6 from the textbook, but its so fundamental (and rather easy to prove, since
+    it directly follows the first definition) that I've decided to include it here.
+\end{definition}
+
+\subsection{Spanning}
+\begin{definition}
+    A collection of vectors is said to \textbf{span} (or \textbf{generate, be a spanning system of, be a complete system of}) $V$ if any vector
+    $v \in V$ can be written as a linear combination of that collection.
+
+    More formally, suppose you have a list $v_1, ..., v_p \in V$ and an arbitrary $v \in V$. This list spans only if
+    \begin{align*}
+        \sum_{i = 1}^{p} \ga_i v_i &= v
+    \end{align*}
+\end{definition}
+
+\subsection{Defining Bases}
+\begin{definition}
+    A system of vectors $v_1, ..., v_p \in V$ is a \textbf{basis} for $V$ if every vector $v \in V$ admits a unique representation as a linear 
+    combination of $v_1, ..., v_p$. 
+    
+    That is, a system of vectors is a basis if that list is linearly independent and spans $V$.
+\end{definition}
+
+\begin{remark}
+    Let $v \in V$ be arbitrary. If the list $v_1, ..., v_p \in V$ is a basis, then
+    \begin{align*}
+        \sum_{i = 1}^{p} \ga_i v_i &= v
+    \end{align*}
+
+    We would refer to the $\ga_i$ as the \textbf{coordinates} of $v$ with respect to this basis.
+\end{remark}
+
+\begin{thm}
+    Any finite set of vectors that span a vector space contains a basis.
+\end{thm}
+\begin{remark}
+    The proof is "recursive" in that the idea is you can remove elements of that list until it becomes linearly independent. Removing elements
+    doesn't impact the list's ability to span.
+\end{remark}
+
+\begin{definition}
+    The \textbf{standard basis vectors} refers to a simple, reliable basis for various vector spaces. The two important ones are for $\F^n$ and 
+    $\mathbb{P}^\R_n$.
+
+    The standard basis vectors for $\F^n$ are
+    \begin{align*}
+        e_1 = \vect{1 \\ 0 \\ \vdots \\ 0}, e_1 = \vect{0 \\ 1 \\ \vdots \\ 0}, \cdots, e_n = \vect{0 \\ 0 \\ \vdots \\ 1} \in \F^n
+    \end{align*}
+
+    The standard basis vectors for $\mathbb{P}^\R_n$ are
+    \begin{align*}
+        1, t, t^2, ..., t^n \in \mathbb{P}^\R_n
+    \end{align*}
+
+\end{definition}

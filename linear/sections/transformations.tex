@@ -1,0 +1,245 @@
+\section{Linear Transformations}
+
+\subsection{Introducing Linear Transformations}
+\begin{definition}
+    A \textbf{transformation} $T$ form a set $X$ to $Y$ is a function from $X$ to $Y$. We denote it as
+    \begin{align*}
+        T : X \rar Y
+    \end{align*}
+\end{definition}
+
+\begin{definition}
+    Suppose there are two vector spaces $V$ and $W$ both over $\F$. A transformation between them is \textbf{linear} if it holds for two properties.
+    \begin{enumerate}
+        \item \textbf{Additivity:} $T(v + u) = T(v) + T(u)$ for all $v,u \in V$.
+        \item \textbf{Homogeneity:} $T(\ga v) = \ga T(v)$ for all $v \in V$ and $\ga \in \F$.
+    \end{enumerate}
+\end{definition}
+
+\begin{lemma}
+    Let $T : \mathbb{P}^\R_n \rar \mathbb{P}^\R_{n - 1}$ be the differentiation of polynomials. $T$ is a linear map.
+\end{lemma}
+
+\subsection{Representing Transformations as Matrices}
+
+\subsubsection{Transformations as Matrices}
+
+\begin{definition}
+    Suppose
+    \begin{align*}
+        T (e_k) = \vect{a_{1, k} \\ a_{2, k} \\ \vdots \\ a_{n, k}} \in \F^n
+    \end{align*}
+    
+    Then, the \textbf{matrix representing $T$} is defined as the following.
+    \begin{align*}
+        A &= 
+        \begin{pmatrix}
+            a_{1, 1} & a_{1, 2} & \cdots & a_{1, n} \\
+            a_{2, 1} & a_{2, 2} & \cdots & a_{2, n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{m, 1} & a_{m, 2} & \cdots & a_{m, n}
+        \end{pmatrix}
+    \end{align*}
+
+    Basically, the first column is just $T(e_1)$. The second column is $T(e_2)$, so the $nth$ column is $T(e_n)$.
+\end{definition}
+
+\subsubsection{Matrix-Vector Mutliplication}
+The concept of matrix-vector multiplication is the ability to find $T(v)$ through the use of a matrix.
+
+\begin{definition}
+    Let $A$ be the matrix representing $T$ and $x \in \F^n$. Then,
+    \begin{align*}
+        Ax &= T(x)
+    \end{align*}
+
+    More explicitly,
+    \begin{align*}
+        Ax &= 
+        \begin{pmatrix}
+            a_{1, 1} & a_{1, 2} & \cdots & a_{1, n} \\
+            a_{2, 1} & a_{2, 2} & \cdots & a_{2, n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{m, 1} & a_{m, 2} & \cdots & a_{m, n}
+        \end{pmatrix}
+        \vect{x_1 \\ x_2 \\ \vdots \\ x_n}
+        \\ &=
+        \begin{pmatrix}
+            a_{1, 1} x_1 + a_{1, 2} x_2 + \cdots + a_{1, n} x_n \\
+            a_{2, 1} x_1 + a_{2, 2} x_2 + \cdots + a_{2, n} x_n \\
+            \vdots \\
+            a_{m, 1} x_1 + a_{m, 2} x_2 + \cdots + a_{m, n} x_n
+        \end{pmatrix}
+    \end{align*}
+
+\end{definition}
+
+\subsubsection{Composing Linear Maps}
+
+\subsubsection{Matrix-Matrix Multiplication}
+\begin{definition}
+    Let $A$ be a $m \times n$ matrix and $B$ be a $n \times r$ matrix. We have two definitions for \textbf{matrix-matrix multiplication}.
+    \begin{enumerate}
+        \item Suppose,
+        \begin{align*}
+            B &= 
+            \begin{pmatrix}
+                | & | &  & | \\
+                b_1 & b_2 & \cdots & b_r \\
+                | & | &  & | \\
+            \end{pmatrix}
+        \end{align*}
+        Where $b_i$ is the $ith$ column of $B$. Then,
+        \begin{align*}
+            AB &:= 
+            \begin{pmatrix}
+                | & | &  & | \\
+                Ab_1 & Ab_2 & \cdots & Ab_r \\
+                | & | &  & | \\
+            \end{pmatrix}
+        \end{align*}
+
+        \item The entry $(AB)_{j,k}$ is
+        \begin{align*}
+            (jth \text{ row of $A$}) \times (ith \text{ column of $B$}) &= \sum_{l = 1}^{n} a_{j,l} \times b_{l,k}
+        \end{align*}
+    \end{enumerate}
+\end{definition}
+
+\begin{remark}
+    Matrix multiplication holds for the following properties.
+    \begin{enumerate}
+        \item \textbf{Associativity:} $A(BC) = (AB)C$
+        \item \textbf{Matrix Distribution:} $A(B + C) = AB + AC$ and $(A + B)C = AC + BC$
+        \item \textbf{Scalar Distribution:} $A(\ga B) = \ga (AB)$
+    \end{enumerate}
+
+    Very importantly, \textbf{matrix multiplication is NOT commutative.}
+\end{remark}
+
+\begin{thm}
+    Let $A$ be the matrix representing $T_1$ and $B$ be the matrix representing $T_2$. Then, the matrix $BA$ represents the composition $T_2 \circ T_1$.
+\end{thm}
+
+\subsubsection{The Rotational Matrix} % NEED MORE INFO
+\begin{definition}
+    Let the \textbf{rotational matrix} be defined as follows.
+    \begin{align*}
+        R_\gt &=
+        \begin{pmatrix}
+            \cos \gt & - \sin \gt \\
+            \sin \gt & \cos \gt
+        \end{pmatrix}
+    \end{align*}
+
+    When multiplied by a vector, it rotates the vectors $\gt$ clockwise. You are functionally composing a vector with a rotation.
+\end{definition}
+
+\subsubsection{Transposing and Tracing Matricies}
+Two more useful tools to have are as follows.
+\begin{definition}
+    The \textbf{transpose}of $A$ is a matrix 
+    \begin{align*}
+        A^T &= (a'_{i,j})_{\substack{1 \leq j \leq n \\ 1 \leq i \leq m}} \text{ and } a'_{i,j} = a_{j,i}
+    \end{align*}
+\end{definition}
+
+\begin{definition}
+    The \textbf{trace} of an $n \times n$ matrix $A = (a_{j,k})$ is the sum of the diagonal entries.
+    \begin{align*}
+        tr(A) &= a_{1, 1} + a_{2, 2} + \cdots + a_{n, n}
+    \end{align*} 
+
+    Equivalently,
+    \begin{align*}
+        tr(A) &= \sum_{i = 1}^{n} a_{i, i}
+    \end{align*}
+\end{definition}
+
+\subsection{Subspaces}
+\begin{definition}
+    Suppose $V$ is a vector space. $V_0$ is a \textbf{subspace} of $V$, if the following properties hold.
+    \begin{enumerate}
+        \item $V_0 \subset V$
+        \item $V_0 \neq \varnothing$
+        \item $v + w \in V_0$ for all $v,w \in V_0$
+        \item $\ga v \in V$ for all $v \in V$ and $\ga \in \F$
+    \end{enumerate}
+\end{definition}
+
+\subsubsection{Null Spaces and Range}
+\begin{definition}
+    Suppose $T : V \rar W$. The \textbf{null space or kernel} of $T$ is the set of all the values $v_0 \in V$ such that
+    \begin{align*}
+        T(v_0) &= \zV_W
+    \end{align*}
+\end{definition}
+
+\begin{definition}
+    Suppose $T : V \rar W$. The \textbf{range} of $T$ is the set of all values $w \in W$ such $w$ is in the image of $T$.
+\end{definition}
+
+\subsection{Isomorphisms}
+\subsubsection{Inverses}
+\begin{definition}
+    Suppose $A : T \rar W$ is a linear transformation. $A$ is \textbf{right invertible} if there exists a $B : W \rar V$ such that $B \circ A = I_V$.
+    In matrix multiplication, $BA$ is the identity matrix.
+\end{definition}
+
+\begin{definition}
+    Suppose $A : T \rar W$ is a linear transformation. $A$ is \textbf{left invertible} if there exists a $B : W \rar V$ such that $B \circ A = I_W$.
+    In matrix multiplication, $AB$ is the identity matrix.
+\end{definition}
+
+\begin{definition}
+    A linear transformation $A : V \rar W$ is \textbf{invertible} only if it is right invertible and left invertible.
+\end{definition}
+
+From that, we have the following corollary.
+\begin{corollary}
+    A linear transformation $A : V \rar W$ is invertible if and only if there exists a unique linear transformation $A^{-1}: W \rar V$ such that
+    \begin{align*}
+        A^{-1} \circ A = I_V \text{ and } A \circ A^{-1} = I_W
+    \end{align*}
+
+    We call $A^{-1}$ the inverse of $A$.
+\end{corollary}
+
+\begin{lemma}
+    If $A$ and $B$ are invertible linear transformations, and $AB$ is defined, then $A \circ B$ is invertible and
+    \begin{align*}
+        (A \circ B)^{-1} &= B^{-1} \circ A^{-1}
+    \end{align*}
+\end{lemma}
+
+\begin{thm}
+    Let $A : X \rar Y$ be a linear transformation. Then, $A$ is invertible if and only if for all $b \in Y$, the equation
+    \begin{align*}
+        Ax &= b
+    \end{align*}
+    has a unique solution.
+\end{thm}
+
+\subsubsection{Defining Isomorphisms}
+\begin{definition}
+    An \textbf{Isomorphism} from a vector space $V$ to a vector space $W$ is an invertible linear map from $V$ to $W$. If there exists an isomorphism
+    between two vector spaces, then we would say that those vector spaces are \textbf{isomorphic}.
+\end{definition}
+
+We will now list the foundational theorems for isomorphisms.
+\begin{thm}
+Let $A : V \rar W$ be an isomorphism. If $v_1, ..., v_n$ is a basis for $V$, then $A(v_1), ..., A(v_n)$ is a basis for $W$.
+\end{thm}
+
+\begin{thm}
+    Let $v_1, ..., v_n$ be a basis for $V$ and $w_1, ..., w_n$ be a basis for $W$. Let $A : V \rar W$ be the map defined by
+    \begin{align*}
+        A(v_i) &= w_i \text{ for } 1 \leq i \leq n.
+    \end{align*}
+
+    $A$ is an isomorphism.
+\end{thm}
+
+\begin{corollary}
+    If vector spaces have bases of the same size, then they are isomorphic.
+\end{corollary}

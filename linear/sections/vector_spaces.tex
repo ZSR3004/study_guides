@@ -1,0 +1,80 @@
+\section{An Introduction to Vector Spaces}
+
+\subsection{The Field}
+Before we begin discussing what the field is, we need to makes sure we understand what complex numbers are.
+\begin{definition}
+    \textbf{The complex numbers} is defined as follows.
+    \begin{align}
+        \C &= \{ a + bi \; | \; a,b \in \R \}
+    \end{align}
+\end{definition}
+
+\begin{definition}
+    \textbf{A Field} refers to the space over which a vector space is defined. In this class we will often refer to a special field (which we may refer to
+    simply as "the field). It is defined as follows.
+    \begin{align}
+        \F &= \{ \R \cup \C \}
+    \end{align}
+    That is, the vector space is either defined over the real or complex numbers.
+\end{definition}
+
+\begin{remark}
+    If $\F = \R$, then $V$ is called a \underline{real vector space}. \\
+    If $\F = \C$, then $V$ is called a \underline{complex vector space}.
+\end{remark}
+
+\subsection{Defining Vector Spaces}
+\begin{definition}
+    A \textbf{vector space} $V$ over $\F$ is a set of elements called \textbf{vectors} that have two operations, closed addition and closed scalar 
+    multiplication. These operations satisfy 8 axioms. That is,
+    \begin{align*}
+        \text{Addition: } & f : V \times V \rar V \\
+        \text{Scalar Multiplication: } & g : \F \times V \rar V
+    \end{align*}
+\end{definition}
+
+\begin{thm}
+    If $V$ is a vector space, then it must have closed addition and closed scalar multiplication such that they fulfill the following vector space 
+    axioms.
+    \begin{enumerate}
+        \item \textbf{Commutativity:} $v + w = w + v$ for all $v,w \in V$.
+        \item \textbf{Associativity:} $(v + w) + u = v + (u + w)$ for all $v,w,u \in V$.
+        \item \textbf{Additive Identity:} There exists (a unique) $\zV \in V$ such that $v + \zV = v$ for all $v \in V$.
+        \item \textbf{Additive Inverse:} For all $v \in V$, there exists (a unique) $v' \in V$ such that $v + v' = \zV$.
+        \item \textbf{Multiplicative Identity:} $1 \times v = v$ for all $v \in V$ and $1 \in \F$.
+        \item \textbf{Multiplicative Associativity:} $(\ga \gb) v = \ga (\gb v)$ for all $v\in V$ and $\ga, \gb \in \F$.
+        \item \textbf{Scalar Distribution:} $\ga (v + w) = \ga v + \ga w$ for all $v,w \in V$ and $\ga \in \F$.
+        \item \textbf{Vector Distribution:} $v (\ga + \gb) = \ga v + \gb v$ for all $v\in V$ and $\ga, \beta \in \F$.
+    \end{enumerate}
+\end{thm}
+
+\begin{remark} 
+    The first 4 axioms relate to addition. The next 2 are about multiplication. The final two connect addition and multiplication through the distributive 
+    property.
+\end{remark}
+
+\begin{lemma}
+    If $V$ is a vector space, then $\zV \times v = \zV$ for all $v \in V$.
+\end{lemma}
+
+\subsection{Important Vector Spaces and Vector Space Properties}
+This section will basically be a bunch of lemmas and theorems that state "this thing" is a vector space.
+\begin{thm}
+    $\R^n$ is a vector space over $\R$.
+\end{thm}
+\begin{thm}
+    $\C^n$ is a vector space over $\C$.
+\end{thm}
+
+\begin{thm}
+    If $M^\F_{m \times n}$ denotes the set of all $m \times n$ matrices with entries in $\F$, then $M^\F_{m \times n}$ is a vector space over $\F$.
+\end{thm}
+
+\begin{thm}
+    Let $\mathbb{P}^\F_n$ denote the set of all polynomials of degree $\leq n$ and coefficients in $\F$. That is,
+    \begin{align*}
+        \mathbb{P}^\F_n &= \{ p(t) = a_0 + a_1 t + a_2 t^2 + \cdots + a_n t^n \; | \; a_i \in \F \text{ for } i \in \{ 0, ..., n \} \}
+    \end{align*}
+
+    $\mathbb{P}^\F_n$ is a vector space over $\F$.
+\end{thm}
