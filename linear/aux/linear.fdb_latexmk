@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1740953842 "/home/zsr/study_guides/linear/linear.tex" "aux/linear.pdf" "linear" 1740953843 0
+["pdflatex"] 1740953915 "/home/zsr/study_guides/linear/linear.tex" "aux/linear.pdf" "linear" 1740953917 0
   "/etc/texmf/web2c/texmf.cnf" 1723396860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/zsr/study_guides/linear/linear.tex" 1740950724 2925 c2c4069d7d11689bae8e4115ec6b0dd5 ""
+  "/home/zsr/study_guides/linear/linear.tex" 1740953912 2952 807e0dd575145cc946e794dc9117214b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbi1000.tfm" 1136768653 3072 e6fe53b666f9cbd66cb135c6fdea66d3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -157,9 +157,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723396894 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1737608054 7881892 4faee375b09c84c229971abfade3b3b8 ""
-  "aux/linear.aux" 1740953843 3659 c7a53b4ac347842a92f94ba083fd53c4 "pdflatex"
-  "aux/linear.out" 1740953843 4004 4f87dfcf589915032a87563a6b7715f0 "pdflatex"
-  "linear.tex" 1740950724 2925 c2c4069d7d11689bae8e4115ec6b0dd5 ""
+  "aux/linear.aux" 1740953917 3659 c115a40e98927864f9871a488820e852 "pdflatex"
+  "aux/linear.out" 1740953917 4004 4f87dfcf589915032a87563a6b7715f0 "pdflatex"
+  "aux/linear.toc" 1740953917 2112 ec6b57e7a11eee95c2cd3309184e7f64 "pdflatex"
+  "linear.tex" 1740953912 2952 807e0dd575145cc946e794dc9117214b ""
   "sections/bases.tex" 1740950814 3947 3a51d7c1ff2d2478937c28467f8532ea ""
   "sections/transformations.tex" 1740953841 8500 362e82c843275f1e0797fb2808b052ff ""
   "sections/vector_spaces.tex" 1740947665 3560 e01d3102aa866afde47b4201918a38cb ""
@@ -168,4 +169,5 @@
   "aux/linear.log"
   "aux/linear.out"
   "aux/linear.pdf"
+  "aux/linear.toc"
   (rewritten before read)
