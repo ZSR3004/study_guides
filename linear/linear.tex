@@ -40,13 +40,9 @@
 \newtheorem*{assumption}{Assumption}
 \newtheorem*{notation}{Notation}
 \newtheorem*{counter}{Counterexample}
-
-% Algorithms
-\newcommand{\quickalg}[1]{\begin{verbatim} #1 \end{verbatim}}
-\newcommand{\alg}[2]{
-    \begin{algorithm} \caption{#1} \begin{algorithmic}[1]
-        #2
-    \end{algorithmic} \end{algorithm}}
+\newtheorem*{strat}{Strategy}
+\newtheorem*{setup}{Setup}
+\newtheorem*{intuiton}{Intuiton}
 
 % Mathbb
 \newcommand{\Z}{\mathbb{Z}}
@@ -103,12 +99,18 @@
 \newcommand{\lar}{\leftarrow}
 \newcommand{\rar}{\rightarrow}
 \newcommand{\lrar}{\leftrightarrow}
+
+% Vectors and Matrices
 \newcommand{\zV}{\mathbf{0}}
 \newcommand{\vect}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\dimV}[1]{\text{dim}(#1)}
+\newcommand{\ranV}[1]{\text{Ran}(#1)}
+\newcommand{\nullV}[1]{\text{null}(#1)}
+\newcommand{\detV}{\text{det}}
 
 \title{Linear Algebra Study Guide}
-\author{Ziyad Rahman}
-\date{\today}
+\author{}
+\date{}
 
 \begin{document}
 \maketitle
@@ -121,5 +123,17 @@
 \input{sections/bases.tex}
 
 \input{sections/transformations.tex}
+
+\input{sections/echelon_form.tex}
+
+\input{sections/dimensions.tex}
+
+\input{sections/subspaces_linear_eq.tex}
+
+\input{sections/coordinate_change.tex}
+
+\input{sections/determinants.tex}
+
+\input{sections/eigenvalues.tex}
 
 \end{document}

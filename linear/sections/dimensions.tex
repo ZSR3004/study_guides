@@ -1,0 +1,42 @@
+\section{Dimensions}
+First, we talk about bases.
+
+\begin{prop}
+    Suppose a vector space $V$ has a finite basis. Then, any two bases have the same number of elements in them.
+\end{prop}
+
+\begin{corollary}
+    The basis of $\F^n$ has $n$ vectors in it.
+\end{corollary}
+
+\begin{definition}
+    The \textbf{dimension} of a vector space $V$, denoted by $\dimV{V}$, is the number of vectors in a basis for $V$ if $V$ has a finite basis.
+    \begin{itemize}
+        \item The dimensions of $\{ \zV \}$ is $0$.
+        \item If $V$is not finite-dimensional, then $V$ is infinitely-dimensional.
+    \end{itemize}
+\end{definition}
+
+Using this definition, we can construct bases.
+\begin{prop}
+    Any linearly independent list of vectors in a finite-dimensional vector space $V$ has at \textit{most} $\dimV{V}$ elements.
+\end{prop}
+
+\begin{prop}
+    Any spanning list of vectors in a finite-dimensional vector space $V$ has at \textit{least} $\dimV{V}$ elements.
+\end{prop}
+
+Following this,
+\begin{thm}
+    If $v_1, ..., v_r$ are linearly independent vectors in a finite-dimensional vector space $V$ with $\dimV{V} = n$, then there exists vectors
+    $v_{r + 1}, ..., v_n$ so that $v_1, ..., v_n$ are a basis for $V$.
+\end{thm}
+
+\begin{thm}
+    Let $V$ be a subspace of a vector space $W$. Suppose $\dimV{W} \leq \infty$. Then,
+    \begin{itemize}
+        \item $V$ is finite dimensional.
+        \item $\dimV{V} \leq \dimV{W}$.
+        \item If $\dimV{V} = \dimV{W}$, then $V = W$
+    \end{itemize}
+\end{thm}

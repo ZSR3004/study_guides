@@ -1,0 +1,106 @@
+\section{Arbitrary Bases and Coordinate Change}
+\begin{definition}
+    Suppose you have a basis $\cB = \{v_1, ..., v_n\} \in V$. Let $v \in V$ be arbitrary. You can express $v$ as a linear combination of the basis.
+    \begin{align*}
+        \ga_1 v_1 + \cdots + \ga_n v_n &= v \text{ for some $\ga_i \in \F$}
+    \end{align*}
+
+    The the values $\ga_1, ..., \ga_n$ are called the \textbf{coordinates}. You can write these as a \textbf{coordinate vector}. Since these are in terms
+    of the basis $\cB$, we say this is the \textbf{coordinate vector with respect to $\cB$}.
+    \begin{align*}
+        [v]_{\cB} &= \vect{\ga_1 \\ \vdots \\ \ga_n}
+    \end{align*}
+\end{definition}
+
+\begin{definition}
+    Let $T : V \rar W$ be a linear transformation. Let $\cA = \{v_1, ..., v_n\}$ be a basis for $V$. Let $\cB = \{w_1, ..., w_m\}$ be a basis for $W$.
+    \textbf{The matrix of the linear transformation with respect to $\cA$ and $\cB$} is the $m \times n$ matrix $[T]_{\cB \cA}$, whose $k$th column is
+    the coordinate vector of $T(v_k)$ relative to $\cB$.
+    \begin{align*}
+        \begin{pmatrix}
+            | & & | \\
+            [T(v_1)]_\cB & \cdots & [T(v_n)]_\cB \\
+            | & & |
+        \end{pmatrix}
+    \end{align*}
+\end{definition}
+
+\begin{lemma}
+    Let $T : V \rar W$ be a linear transformation. Let $\cA = \{v_1, ..., v_n\}$ be a basis for $V$. Let $\cB = \{w_1, ..., w_m\}$ be a basis for $W$.
+    Let $v \in V$ be arbitrary. Then,
+    \begin{align*}
+        [T]_{\cB\cA} [v]_\cA &= [T(v)]_\cB
+    \end{align*}
+\end{lemma}
+
+\begin{definition}
+    The matrix $[I]_\cB\cA$ is called the \textbf{change in coordinates matrix} from basis $\cA$ to $\cB$. This is just the linear transformation of the
+    identity matrix with respect to $\cB$ and $\cA$.
+\end{definition}
+
+\begin{corollary}
+    If $[I]_\cB\cA$ is a change in coordinates matrix and $v \in V$ is arbitrary, then
+    \begin{align*}
+        [I]_{\cB\cA} [v]_\cA &= [I(v)]_\cB = [v]_\cB
+    \end{align*}
+\end{corollary}
+
+\begin{lemma} \textbf{(Inverse Change in Coordinates)}
+    \begin{align*}
+        [I]_{\cB\cA} &= ([I]_{\cA\cB})^{-1}
+    \end{align*}
+\end{lemma}
+
+\begin{lemma} \textbf{(Composition of Change in Coordinates)}
+    Let $T_1 : X \rar Y$ and $T_2 : Y \rar Z$ be linear transformations. Let $A, B, C$ be bases for $X, Y, Z$ 
+    respectively. Then, $T  = T_1 T_2: X \rar Z$, then,
+    \begin{align*}
+        [T]_{CA} &= [T_2 T_1]_{CA} = [T_2]_{CB} [T_1]_{BA}
+    \end{align*}
+\end{lemma}
+
+\begin{corollary}
+    It follows that,
+    \begin{align*}
+        [I]_{CA} &= [I]_{CB} [I]_{BA}
+    \end{align*}
+\end{corollary}
+
+We can use these two lemmas to find the change in coordinate matrices for more difficult examples.
+\begin{strat}
+    Let $A$ and $B$ be bases. Let $S$ denote the standard basis vector. Suppose you want to find $[T]_{AB}$, but it is difficult to do. Then,
+    \begin{enumerate}
+        \item Find $[T]_{SA}$ and $[T]_{SB}$.
+        \item Use the inverse lemma to get $[T]_{AS} = ([T_{SA}])^{-1}$.
+        \item Use the composition lemma to get $[T]_{AB} = [T]_{AS} [T]_{SB}$.
+    \end{enumerate}
+    Note that you can replace $T$ with $I$ and stay in the same vector space.
+\end{strat}
+
+\begin{example}
+    Let 
+    \begin{align*}
+        A = \{ 1, 1 + t \} && B = \{ 1 + 2t, 1 - 2t \}
+    \end{align*}
+
+    \begin{enumerate}
+        \item Write each vector as a linear combination of the standard basis, $S = \{e_1, e_2\} = \{ 1, t \}$.
+        \begin{align*}
+            1 &= e_1 + 0e_2 \\
+            1 + t &= e_1 + e_2 \\
+            1 + 2t &= e_1 + 2e_2 \\
+            1 - 2t &= e_1 - 2 e_2
+        \end{align*}
+    \end{enumerate}
+
+    Now, we have,
+    \begin{align*}
+        [I]_{SA} &=
+        \begin{pmatrix}
+            1 & 1 \\ 0 & 1
+        \end{pmatrix} \\
+        [I]_{SB} &= \vect{1 & 1 \\ 2 & -2}
+    \end{align*}
+    \item Now, find $[I]_{BS} = ([I]_{SB})^{-1}$.
+    \item Use the composition lemma to get your final answer.
+\end{example}

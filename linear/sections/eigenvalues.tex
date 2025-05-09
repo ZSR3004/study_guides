@@ -1,0 +1,158 @@
+\section{Eigenbases and Eigenspaces}
+
+\subsection{An Introduction to Spectral Theory}
+
+\begin{definition}
+    A scalar $\gl \in \F$ is a \textbf{eigenvalue} of a linear map $A: V \rar V$ if there exists a nonzero vector such that 
+    \begin{align*}
+        Ax &= \gl x
+    \end{align*} 
+\end{definition}
+
+\begin{definition}
+    A vector $v \in V$ is an \textbf{eigenvector} of a corresponding eigenvalue $\gl$ if
+    \begin{align*}
+        Av &= \gl v
+    \end{align*} 
+\end{definition}
+
+\begin{definition}
+    The set of all eigenvalues of a linear map $A: V \rar V$ is called the \textbf{spectrum} of $A$.
+\end{definition}
+
+\begin{definition}
+    The set of all eigenvectors associated to an eigenvalue $\gl$ together with the $\{ \zV \}$ is the \textbf{eigenspace} of the linear map $A$
+    associated with $\gl$.
+\end{definition}
+
+\begin{lemma}
+    Let $A : \F^n \rar \F^n$ be a linear map. Let $ \gl \in \F$ be an eigenvalue of $A$. Then,
+    \begin{align*}
+        \text{$x$ is an eigenvector associated to $\gl$} &\iff x \in \nullV{A - \gl I}
+    \end{align*}
+\end{lemma}
+
+\begin{corollary}
+    \begin{align*}
+        (A - \gl I)x &= \zV \\
+        & \Updownarrow  \\
+        Ax - \gl I x &= \zV \\
+        & \Updownarrow  \\
+        Ax - \gl x &= \zV \\
+        & \Updownarrow  \\
+        Ax &= \gl x
+    \end{align*}
+\end{corollary}
+
+\begin{thm}
+    A scalar $\gl$ is an eigenvalue of $A : \F^n \rar \F^n$ $\iff \detV(A - \gl I) = 0$
+\end{thm}
+
+\begin{definition}
+    The polynomial (with variable $\gl$), $\detV(A \gl I)$ is called the \textbf{characteristic polynomial} of $A$.
+    By the theorem, to find the eigenvalues, compute the characteristic polynomial and find its roots.
+\end{definition}
+
+\begin{thm} \textbf{(The Fundamental Theorem of Algebra)}
+    Any polynomial can be factored across complex roots.
+\end{thm}
+
+\subsection{Working in Arbitrary Bases}
+
+\begin{setup}
+    Let $A : V \rar V$ be a linear transformation. Suppose $\dimV V = n$. Let $\cB = \{ v_1, ..., v_n \}$ be a basis for $V$.
+    \begin{enumerate}
+        \item 
+        \begin{align*}
+            [A]_{\cB \cB} &= 
+            \begin{pmatrix}
+                | & & | \\
+                [A(v_1)]_{\cB} & \cdots & [A(v_n)]_{\cB} \\
+                | & & |
+            \end{pmatrix}
+        \end{align*}
+        \item Find the eigenvalues of $[A]_{\cB \cB}$.
+    \end{enumerate}
+
+    \emph{We will show that $\detV ([A]_{\cB} - \gl I) = 0$ is independent of the basis.}
+\end{setup}
+
+\begin{definition}
+    Two square $n \times n$ matrices $A$ and $B$ are \textbf{similar} or \textbf{conjugate} if there exists an invertible matrix $Q$ such that,
+    \begin{align*}
+        A &= S Q S^{-1}
+    \end{align*}
+\end{definition}
+
+\begin{lemma}
+    If $\cB$ and $\cC$ are 2 bases for $V$ and $A : V \rar V$ is a linear map, then $[A]_{\cB \cB}$ and $[A]_{\cC \cC}$ are similar.
+\end{lemma}
+
+\begin{lemma}
+    If $A$ and $B$ are similar, they have the same determinant. That is,
+    \begin{align*}
+        \detV A &= \detV B
+    \end{align*}
+\end{lemma}
+
+\begin{prop}
+    The characteristic polynomials of $[A]_{\cB \cB}$ and $[A]_{\cC \cC}$ are equal.
+\end{prop}
+\begin{proof}
+    Let $R = [A]_{\cB \cB}$ and $T = [A]_{\cC \cC}$. Since these are similar matrices, there exists an invertible matrix $Q$ such that,
+    \begin{align*}
+        R &= S T S^{-1}.
+    \end{align*}
+    To show $\detV (T - \gl I) = \detV (R - \gl I)$, it is to show that $R - \gl I$ and $T - \gl I$ are similar matrices (since similar matrices have
+    the same determinant). It follows that,
+    \begin{align*}
+         R - \gl I &= S T S^{-1} - \gl I \\
+         &= S T S ^{-1} - \gl S I S^{-1} \\
+         &= S (T S^{-1} - \gl I S^{-1}) \\
+         &= S (T - \gl I) S^{-1}
+    \end{align*}
+    So, $R - \gl I$ and $T - \gl I$ are similar matrices as desired.
+\end{proof}
+
+\begin{remark}
+    Consequently, the spectrum $A : V \rar V$ can be computed with respect to any basis.
+\end{remark}
+
+\subsection{Special Cases}
+\begin{lemma}
+    The eigenvalues of a triangular matrix are its diagonal entries.
+\end{lemma}
+
+\begin{corollary}
+    The eigenvalues of a diagonal matrix are its diagonal entries.
+\end{corollary}
+
+\begin{lemma}
+    Let $A$ be an $n \times n$ matrix. Let $\gl_1, ..., \gl_n$ be its complex eigenvalues, listed with multiplicity. Then,
+    \begin{align*}
+        \detV A &= \gl_1 \gl_2 \cdots \gl_n
+    \end{align*}
+\end{lemma}
+
+The following definitions were not covered in class, but were used heavily on homework $9$.
+\begin{definition}
+    Suppose $A$ is an $n \times n$ matrix. $A$ is a \textbf{nilpotent matrix} if there exists a \emph{positive integer} $k$ such that,
+    \begin{align*}
+        A^k &= 0
+    \end{align*}
+    Note that this is \emph{not} for all $k$. Only a specific $k$ and all the positive integers above that.
+\end{definition}
+
+\begin{definition}
+    Suppose $A : V \rar V$ is a linear map. Let $U$ be a subspace of $V$. We call $U$ an invariant under $A$ if for any arbitrary $u \in U$, 
+    $Au \in U$. More concisely,
+    \begin{align*}
+        \forall u \in U, \; Au \in U.
+    \end{align*}
+\end{definition}
+
+\noindent The following lemma was not explicitly done in class or on homework, but is useful to know.
+\begin{lemma}
+    If $A$ is an $n \times n$ matrix, it has $n$ eigenvalues by the fundamental theorem of algebra.
+\end{lemma} 
+

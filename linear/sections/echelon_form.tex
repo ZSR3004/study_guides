@@ -1,0 +1,211 @@
+\section{Linear Equations}
+
+\subsection{Introduction to Linear Systems}
+\begin{definition}
+    A \textbf{Linear System} is a collection of $m$ linear equations with $n$ unknowns.
+    \begin{align*}
+        \begin{cases}
+            a_{1,1}x_1 + a_{1,2}x_2 + \cdots + a_{1, n} x_n = b_1 \\
+            a_{2,1}x_1 + a_{2,2}x_2 + \cdots + a_{2, n} x_n = b_2 \\
+            \vdots \\
+            a_{m,1}x_1 + a_{m,2}x_2 + \cdots + a_{m, n} x_n = b_m 
+        \end{cases}
+    \end{align*}
+    Where $a_{i,j}, b_i \in \F$.
+\end{definition}
+
+\begin{notation}
+    Given the following arbitrary linear system,
+    \begin{align*}
+        \begin{cases}
+            a_{1,1}x_1 + a_{1,2}x_2 + \cdots + a_{1, n} x_n = b_1 \\
+            a_{2,1}x_1 + a_{2,2}x_2 + \cdots + a_{2, n} x_n = b_2 \\
+            \vdots \\
+            a_{m,1}x_1 + a_{m,2}x_2 + \cdots + a_{m, n} x_n = b_m 
+        \end{cases}
+    \end{align*}
+
+    We can write this as a system of matrices.
+    \begin{align*}
+        \begin{pmatrix}
+            a_{1,1} & \cdots & a_{1, n} \\
+            \vdots & \ddots & \vdots \\
+            a_{m, 1} & \cdots & a_{m, n}
+        \end{pmatrix}
+        \vect{x_1 \\ \vdots \\ x_n} &=
+        \vect{b_1 \\ \vdots \\ b_m}
+    \end{align*}
+
+    We can further simplify writing such an equation through an \textbf{augmented matrix}.
+    \begin{align*}
+        \left(\begin{array}{ccc|c}
+            a_{1,1} & \cdots & a_{1,n} & b_1 \\
+            \vdots  & \ddots & \vdots  & \vdots \\
+            a_{m,1} & \cdots & a_{m,n} & b_m
+        \end{array}\right)
+    \end{align*}
+
+    Also denoted as $(A | b)$.
+\end{notation}
+
+\subsection{Finding Solutions: Gauss-Jordan Elimination}
+\begin{definition}
+    Let $(A| b)$ be an augmented matrix. You can apply three types of \textbf{row operations} to find the solution to such a system.
+    \begin{enumerate}
+        \item \textbf{Row Exchange}: Interchange two rows.
+        \item \textbf{Scaling}: Multiply a row by a non-zero number.
+        \item \textbf{Row Replacement}: Replace row $k$ by its sum with a constant multiple of row $j$. That is, $R_k + \ga R_j$ such that $\ga \neq 0$. 
+    \end{enumerate}
+\end{definition}
+
+\begin{thm}
+    Row operations do not change the solutions to a linear system.
+\end{thm}
+
+\begin{prop}
+    Each row operation can be realized by multiplication of an invertible matrix. 
+    \begin{enumerate}
+        \item \textbf{Row Exchange}: Suppose you are changing the $k$th and $j$th rows. This can be expressed as the identity matrix with the  
+        $k$th and $j$th rows swapped.
+        % \begin{align*}
+        %     \begin{pmatrix}
+        %         \cdots & I_1 & \cdots \\
+        %         & \vdots & \\
+        %         \cdots & I_j & \vdots \\
+        %         & \vdots & \\
+        %         \cdots & I_k & \vdots \\
+        %         & \vdots &
+        %     \end{pmatrix}
+        % \end{align*}
+        
+        \item \textbf{Scaling}: Suppose you are scaling the $k$th row by $\ga \in \F$. You can represent this as the identity matrix where the
+        $k$th row is scaled by $\ga$.        
+    \end{enumerate}
+\end{prop}
+
+\subsection{Finding the Inverse of a Function via Row Reduction}
+\begin{strat}
+    Suppose you have a $n \times n$ matrix,
+    \begin{align*}
+        A &= 
+        \begin{pmatrix}
+            a_{1,1} & \cdots & a_{1, n} \\
+            \vdots & \ddots & \vdots \\
+            a_{n, 1} & \cdots & a_{n, n}
+        \end{pmatrix}
+    \end{align*}
+
+    You can create an augmented matrix, $(A | b)$, where $b$ is the identity matrix.
+    \begin{align*}
+        \left(\begin{array}{ccc|cccc}
+            a_{1,1} & \cdots & a_{1,n} & 1 & 0 & \cdots & 0 \\
+            a_{2, 1} & \cdots & a_{2, n} & 0 & 1 & \cdots & 0 \\ 
+            \vdots  & \ddots & \vdots  & \vdots & \vdots & \ddots & \vdots \\
+            a_{n,1} & \cdots & a_{n,n} & 0 & 0 & \cdots & 0
+        \end{array}\right)
+    \end{align*}
+
+    Now, make $A$ into its row reduced echelon form. The right side (what was originally the identity matrix) will be transformed into $A$'s inverse
+    matrix.
+\end{strat}
+
+\subsection{Echelon Form}
+\begin{definition}
+    A matrix or augmented matrix is in \textbf{echelon form} if it satisfies two conditions.
+    \begin{enumerate}
+        \item All zero rows are below all non-zero rows.
+        \item For a non-zero row, its leftmost non-zero entry (which is called the leading entry or \textbf{pivot}) is strictly to the right of
+        the leading entry in the row before it. 
+    \end{enumerate}
+    \begin{example}
+        The following matrix is in echelon form.
+        \begin{align*}
+            \left(\begin{array}{ccc|c}
+                1 & 2 & 0 & 8 \\
+                0 & 1 & 1 & 1 \\
+                0 & 0 & 3 & 3
+            \end{array}\right)
+        \end{align*}
+    \end{example}
+\end{definition}
+
+\begin{thm}
+    Every matrix can be transformed into echelon form by applying a finite sequence of row operations.
+\end{thm}
+
+\begin{strat} \textbf{(Echelon Form)}
+
+    \textbf{Main Step}:
+    \begin{enumerate}
+        \item Find leftmost non-zero column matrix.
+        \item Apply row-exchange to ensure entry in the first row of the column is non-zero.
+        \item Apply scaling so the pivot in the first row equals 1.
+        \item Apply row replacement by adding an appropriate multiple of row 1 to each other row, so all entries below the pivot = 0.
+    \end{enumerate}
+
+    \textbf{Next}:
+    \begin{enumerate}
+        \item Leave the first row alone.
+        \item Apply the main step to columns 2 through m.
+        \item Apply the main step to columns 3 through m.
+        \item Continue applying the main step to each subsequent column.
+    \end{enumerate}
+
+    Then, you have echelon form.
+\end{strat}
+
+\subsection{Row Reduced Echelon Form}
+\begin{definition}
+    A matrix or augmented matrix is in \textbf{row reduced echelon form} if it fulfills the requirements of echelon form and two more constrains.
+    In total, these requirements are summarized below.
+    \begin{enumerate}
+        \item All zero rows are below all non-zero rows.
+        \item The left most non-zero entry in each column is a pivot and every pivot is strictly to the right of every pivot above it.
+        \item Every pivot is equal to 1.
+        \item All entries above a pivot are zero.
+    \end{enumerate}
+\end{definition}
+
+\begin{thm}
+    Every matrix can be put into reduced echelon form by a finite sequence of row operations.
+\end{thm}
+
+\begin{definition}
+    The equation $Ax = b$ is \textbf{inconsistent} if it does not have a solution.
+\end{definition}
+
+\begin{thm}
+    The system $Ax = b$ is inconsistent if and only if there exists a row of the form,
+    \begin{align*}
+        \begin{pmatrix}
+            0 & 0 & \cdots & 0 & | & b
+        \end{pmatrix}
+    \end{align*}
+    Such that $b \neq 0$.
+\end{thm}
+
+\begin{corollary}
+    A system $Ax = b$ has a solution if there exists a pivot in every row.
+\end{corollary}
+
+\begin{corollary}
+    A system $Ax = b$ with a solution has a unique solution for $b$ if and only if there exists a pivot in every column of the reduced echelon
+    form of $A$.
+\end{corollary}
+
+\begin{thm}
+    Let $v_1, ..., v_m \in \F^n$ be a system of vectors. Let,
+    \begin{align*}
+        A &= 
+        \begin{pmatrix}
+            | & | &  & | \\
+            v_1 & v_2 & \cdots & v_m \\
+            | & | &  & |           
+        \end{pmatrix}
+    \end{align*}
+    be the $m \times n$ matrix. The system is
+    \begin{enumerate}
+        \item \textbf{Linearly Independent} if and only if $A_e$ has a pivot in every column (no free variables).
+        \item \textbf{Spanning} if and only if $A_e$ has a pivot in every row (solutions exist) .
+    \end{enumerate}
+\end{thm}

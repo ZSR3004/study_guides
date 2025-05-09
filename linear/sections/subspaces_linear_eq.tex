@@ -1,0 +1,37 @@
+\section{Fundamental Subspaces Associated To Linear Maps}
+We'll begin by redefining the null space and range of a linear transformation.
+
+\begin{definition}
+    Suppose $T : V \rar W$. The \textbf{null space or kernel} of $T$ is the set of all the values $v_0 \in V$ such that
+    \begin{align*}
+        T(v_0) &= \zV_W
+    \end{align*}
+    Note: $\dimV{\nullV{A}} \leq \dimV{V}$.
+\end{definition}
+\begin{definition}
+    Suppose $T : V \rar W$. The \textbf{range} of $T$ is the set of all values $w \in W$ such $w$ is in the image of $T$.
+
+    Note: $\dimV{\ranV{A}} \leq \dimV{W}$.
+\end{definition}
+
+From here, we can make a relationship between reduced row echelon form and these subspaces.
+\begin{thm}
+    A basis for $\nullV{A}$ is made of the vectors at the free variables in the vector form of the set of solutions to $Ax = \zV$. In particular,
+    $\dimV{\nullV{A}}$ equals the number of free variables in $A$.
+\end{thm}
+
+\begin{definition}
+    Let $A$ be a matrix. Let $A_e$ be the echelon form of $A$. The $i$th column is a \textbf{pivot column} if the $i$th column of $A_e$ contains a 
+    pivot.
+\end{definition}
+\begin{thm}
+    Let $A$ be a matrix and $A_e$ be the echelon form. The pivot columns of $A$ form a basis for $\ranV{A}$. In particular, $\dimV{\ranV{A}}$ equals
+    the number of pivot columns in $A_e$.
+\end{thm}
+
+\begin{thm} \textbf{(Rank's Theorem)}
+    Let $A$ be a $m \times n$ matrix representing the linear map $\F^n \rar \F^m$. Let $A_e$ be the echelon form of $A$. Then,
+    \begin{align*}
+        \dimV{\F^n} &= \dimV{\nullV{A}} + \dimV{\ranV{A}}
+    \end{align*}
+\end{thm}

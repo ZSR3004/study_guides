@@ -1,0 +1,163 @@
+\section{Determinants}
+
+\subsection{Constructing the Determinant}
+\begin{definition}
+    The \textbf{determinant} of the $2 \times 2$ matrix $A = \vect{a & b \\ c & d}$ is given by
+    \begin{align*}
+        det A = det\vect{a & b \\ c & d} = \left| \begin{array}{cc} a & b \\ c & d \end{array} \right| = ad - bc \in \F
+    \end{align*}
+\end{definition}
+
+\begin{remark}
+    If the $2 \times 2$ matrix $A = \vect{v_1 v_2}$, then the determinant of $A$ equals the signed area of a parallelogram spanned by the vector columns.
+    The sign is positive if the angle from $v_1$ to $v_2$ is less than $\pi$.
+
+    If $A$ has a dimension higher than $2 \times 2$, then the determinant is the signed volume of the parallepiped spanned by the columns vectors of 
+    $A$.
+\end{remark}
+
+
+\subsection{Expanding Along Columns and Rows}
+\begin{notation}
+    The \textbf{$(i,j)$-minor} of $A$, denoted $A_{(i,j)}$ is the $(n-1) \times (n - 1)$ matrix obtained from deleting the $i$th row and $j$th column.
+\end{notation}
+
+\begin{definition}
+    Let $A$ be an $n \times n$ matrix. The number 
+    \begin{align*}
+        C_{(i,j)} &= (-1)^{i + j} A_{(i,j)}
+    \end{align*}
+    Is called the $(i,j)-$cofactor of $A$.
+\end{definition}
+
+\begin{definition}
+    Suppose $A = (a_{(j, k)})$ is an $n \times n$ matrix. We can compute the determinant of $A$ via a process called \textbf{Cofactor Expansion}.
+    We can either \textbf{expand along the $j$th row} or \textbf{expand along the $k$th column}
+    \begin{enumerate}
+        \item[] \textbf{Expanding Along the $j$th Row:}
+        \begin{align*}
+            \detV A &= \sum_{k = 1}^{n} a_{j,k} C_{(j,k)} \\
+            &= \sum_{k = 1}^{n} a_{j,k} (-1)^{j + k} \detV (A_{(j,k)}) 
+        \end{align*}
+        Note that you're expanding along $j$, so $k$ is in the sum notation. That is, $j$ remains fixed (for example, you might be expanding along the
+        first row, so $j = 1$).
+        \item[] \textbf{Expanding Along the $k$th Column:}
+        \begin{align*}
+            \detV A &= \sum_{j = 1}^{n} a_{j,k} C_{(j,k)} \\
+            &= \sum_{j = 1}^{n} a_{j,k} (-1)^{j + k} \detV (A_{(j,k)}) 
+        \end{align*}
+        Note that you're expanding along $k$, so $j$ is in the sum notation. That is, $k$ is a fixed value.
+    \end{enumerate}
+\end{definition}
+
+\begin{thm}
+    Let $A$ be an $n \times n$ matrix. It doesn't matter if you do cofactor expansion along a row or column (or even which row or column). The result
+    will always be the same. That is, you can do cofactor expansion along any row and column to find the determinant of a matrix.
+\end{thm}
+
+\begin{remark}
+    In practice, its often easier to expand along the row or column with the most amount of $0$ entries. This will allow you to cancel out terms early
+    on. Expanding along other rows will yield the same result, but you will have computed more determinants than you would have otherwise had to. 
+\end{remark}
+
+\subsection{Special Cases of the Determinant}
+\begin{lemma}
+    If $A$ is an $n \times n$ matrix with a zero row or zero column, then $\detV A = 0$.
+\end{lemma}
+
+\begin{definition}
+    If $A$ is an $n \times n$ matrix, we call it \textbf{diagonal} if $a_{j,k} = 0$ for all $a_{j,k}$ where $j \neq k$.
+\end{definition}
+\begin{definition}
+    Suppose $A$ is an $n \times n$ matrix. 
+
+    $A$ is \textbf{upper triangular} if $a_{j,k} = 0$ for all $a_{j,k}$ where $k < j$.
+    
+    $A$ is \textbf{lower triangular} if $a_{j,k} = 0$ for all $a_{j,k}$ where $k > j$.
+
+    $A$ is a \textbf{triangular matrix} if it is upper triangular or lower triangular.
+\end{definition}
+
+\begin{remark}
+    A diagonal matrix is a type of triangular matrix. So, any theorem that applies to triangular matrices applies to diagonal ones. Although, not
+    all theorem related to diagonal matrices apply to triangular ones.
+\end{remark}
+
+\begin{thm}
+    If $A$ is a triangular matrix, then $\detV A$ is the produce of the entries in $A$'s main diagonal. So,
+    \begin{align*}
+        \detV A &= a_{1,1} \times a_{2,2} \times \cdots \times a_{n, n} 
+    \end{align*}
+\end{thm}
+
+\begin{thm}
+    Suppose $A$ is an $n \times n$ matrix. Let $A'$ be the result of switching any two rows or columns of $A$. Then,
+    \begin{align*}
+        \detV A' &= - \detV A
+    \end{align*} 
+\end{thm}
+
+\subsection{Determinants and Invertibility}
+
+\begin{setup}
+    Suppose $A$ is an $n \times n$ matrix. We will work towards showing that if and only if $\detV A \neq 0$.
+    
+    What we know:
+    \begin{enumerate}
+        \item $A$ is invertible if and only if its reduced row echelon, $A_{re}$ form has a pivot in every row and column.
+        \item $A_{re}$ is a triangular matrix, so its determinant is the product of its diagonal.
+    \end{enumerate}
+
+    From these facts, we can deduced that $A$ is invertible if and only if $\detV A_{re} = 1$. Now, we will give the rest of the building blocks.
+\end{setup}
+
+\begin{lemma}
+    Suppose $A$ and $B$ are $n \times n$ matrices.
+    \begin{align*}
+        \detV AB &= \detV A \times \detV B
+    \end{align*}
+\end{lemma}
+
+We will now address the determinants of each elementary matrix.
+\begin{lemma}
+    Let $A$ be an $n \times n$ matrix.
+    \begin{enumerate}
+        \item[] \textbf{Row Exchange:} Suppose $E_{j, k}$ is obtained from swapping the $j$th and $k$th row of $I$. Then,
+        \begin{align*}
+            \detV E_{j,k} &= -1
+        \end{align*}
+        \item[] \textbf{Row Scaling:} Suppose $E$ is obtained by scaling the $j$th row of $I$ by $c$. Note that by our construction on row scaling,
+        $c \neq 0$.
+        \begin{align*}
+            \detV E &= c \neq 0
+        \end{align*}
+        \item[] \textbf{Row Replacement:} Suppose $E$ is obtained from replacing row $k$ with its sum with $c \times$row $j$. Then,
+        \begin{align*}
+            \detV E &= 1
+        \end{align*}
+    \end{enumerate}
+\end{lemma} 
+
+\begin{corollary}
+    The determinants of the elementary matrices are not zero.
+\end{corollary}
+
+So, it follows that,
+\begin{thm}
+    If $A$ is an $n \times n$ matrix, then $A$ is invertible if and only if $\detV A \neq 0$.
+\end{thm}
+
+From this, we find three corollaries.
+\begin{corollary}
+    If $A$ has $2$ identical columns, then $A$ is not invertible.
+\end{corollary}
+\begin{corollary}
+    If $A$ has $2$ identical rows, then $A$ is not invertible.
+\end{corollary}
+
+\begin{corollary}
+    Let $A$ be invertible, then
+    \begin{align*}
+        \detV({A^{-1}}) &= \frac{1}{\detV A}
+    \end{align*}
+\end{corollary}
