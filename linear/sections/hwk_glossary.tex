@@ -1,3 +1,163 @@
 \section{Selected Homework Problems}
 This section will include homework problems of importance. That is, homework problems that we might be asked to prove on an exam or problems that might
-be fundamental to proving other, commonly talked about problems.
+be fundamental to proving other, commonly talked about problems. I won't be including the proofs here, but if the proof is somehow important because of
+the technique used or I thought it was difficult, it will be in the selected proofs section. Note that some of these problems might have already been
+mentioned in previous parts of this study guide. I'm just including most everything here for completeness' sake.
+
+\subsection{Homework 3}
+\begin{enumerate}
+    \item[] \textbf{Problem 2:} 
+        \begin{lemma}
+        Let $V$ and $W$ be vector spaces. If $T : V \rar W$ is a linear map, then $T(\zV_V) = \zV_W$.
+        \end{lemma}
+    \item[] \textbf{Problem 4a:}
+        \begin{lemma}
+            Let $V$ and $W$ be vector spaces. Suppose $v_1, ..., v_k$ is a set of vectors in $V$. If $Tv_1, ..., Tv_k$ is a linearly independent list in
+            $W$, then $v_1, ..., v_k$ is a linearly independent list in $V$.
+        \end{lemma}
+        \begin{remark}
+            The converse is not true!
+        \end{remark}
+\end{enumerate}
+
+\subsection{Homework 4}
+\begin{enumerate}
+    \item[] \textbf{Problem 1}
+    \begin{lemma}
+        Suppose $A : V \rar W$ is an isomorphism. If $v_1, ..., v_k$ is a basis for $V$, then $Av_1, ..., Av_n$ is a basis for $W$.
+    \end{lemma}
+    \item[] \textbf{Problem 2}
+    \begin{lemma}
+        Suppose $V$ and $W$ are vector spaces over $\F$. Suppose the set $v_1, ..., v_n$ is a basis for $V$ and the set $w_1, ..., w_n$ is a basis
+        for $W$. Let $A : V \rar W$ be a linear map defined by $A(v_i) = w_i$ for $i \in \{1, ..., n\}$.
+
+        If $V$ is a vector space with a basis of $n$ elements, then $V$ is isomorphic to $\F^n$.
+    \end{lemma}
+
+    The following corollary is not from a homework, but is a natural extension of this lemma using a definition from later in the course.
+    \begin{corollary}
+        If $\dimV V = n$, then $V$ is isomorphic to $\F^n$.
+    \end{corollary} 
+
+    \item[] \textbf{Problem 3a and 3b} 
+    \begin{lemma}
+        Let $A : V \rar W$ be a linear transformation. The null space of $A$ is s subspace of $V$.
+    \end{lemma}
+    \begin{lemma}
+        Let $A : V \rar W$ be a linear transformation. The range of $A$ is a subspace of $W$.
+    \end{lemma}
+
+\end{enumerate}
+
+\subsection{Homework 5}
+\begin{enumerate}
+    \item[] \textbf{Problem 1}
+    \begin{lemma}
+        Let $X$ and $Y$ be vector spaces. Let $A : X \rar Y$ be a linear transformation.
+
+        $A$ is invertible \textbf{if and only if} for all $b \in Y$, the equation $Ax = b$ has a unique solution for all $x \in X$.
+    \end{lemma}
+\end{enumerate}
+
+\subsection{Homework 6}
+\begin{enumerate}
+    \item[] \textbf{Problem 1}
+    \begin{lemma}
+        Suppose $V$ is a vector space and $v_1, ..., v_n$ is a \textbf{linearly independent} system in $V$.
+        
+        $v_1, ..., v_n$ is a basis \textbf{if and only if} $n = \dimV V$.
+    \end{lemma}
+    \item[] \textbf{Problem 2}
+    \begin{lemma}
+        Suppose $V$ is a vector space of dimension $n$. A system $v_1, ..., v_n$ in $V$ is linearly independent \textbf{if and only if} it spans $V$.
+    \end{lemma}
+    \item[] \textbf{Problem 4}
+    \begin{thm}
+        Let $V$ be a subspace of a vector space $W$ with $\dimV W < \infty$. Then,
+        \begin{enumerate}
+            \item $V$ is finite dimensional.
+            \item $\dimV V \leq \dimV W$, and
+            \item if $\dimV V = \dimV W$, then $V = W$.
+        \end{enumerate}
+    \end{thm}
+\end{enumerate}
+
+\subsection{Homework 7}
+\begin{enumerate}
+    \item[] \textbf{Problem 2}
+    \begin{lemma}
+        Let $A$ be a matrix. The pivot columns in $A$ form a basis for $\ranV A$.
+    \end{lemma}
+    \begin{remark}
+        You can substitute $A$ for $A_{re}$ and this is still true (since $A_{re}$ is just another matrix). Talking in terms of $A_{re}$ is exactly
+        problem 1 of homework 7. In a proof, it might be easier to prove something about $A_{re}$ first, then talk about the orginal matix.
+    \end{remark}
+    \item[] \textbf{Problem 7}
+    \begin{thm} \textbf{(General Rank's Theorem.)}
+
+        Suppose $V$ and $W$ are finite-dimensional vector spaces. Let $A : V \rar W$ be a linear map. Then,
+        \begin{align*}
+            \dimV V &= \dim (\nullV A) + \dim (\ranV{A}).
+        \end{align*}
+    \end{thm}
+    \item[] \textbf{Problem 8}
+    \begin{lemma}
+        If $A : X \rar Y$ is a linear map and $V$ is a subspace of $X$, then $\dim (AV) \leq \dimV V$.
+    \end{lemma}
+\end{enumerate}
+
+\subsection{Homework 8}
+\begin{enumerate}
+    \item[] \textbf{Problem 1}
+    \begin{lemma}
+        Let $T: V \rar W$ be a linear transformation. Let $\cA = \{v_1, ..., v_n\}$ be a basis for $V$. Let $\cB = \{ w_1, ..., w_m \}$ be a basis for
+        $W$. Finally, let $[T]_{\cA \cB}$ be the matrix of linear transformation $T$ with respect to $\cA$ and $\cB$.
+        If $v \in V$, then 
+        \begin{align*}
+            [T]_{\cA \cB} [v]_{\cA} &= [T(v)]_{\cB}
+        \end{align*}
+    \end{lemma}
+    \item[] \textbf{Problem 2}
+    \begin{lemma}
+        Let $\cA$ and $\cB$ be bases for vector spaces $V$. Let $[I]_{\cB \cA}$ be the change in coordinates matrix from basis $\cA$ to basis $\cB$.
+        \begin{align*}
+            [I]_{\cA \cB} &= ([I]_{\cB \cA})^{-1}
+        \end{align*}
+    \end{lemma}
+\end{enumerate}
+
+\subsection{Homework 9}
+\begin{enumerate}
+    \item[] \textbf{Problem 1b}
+    \begin{lemma}
+        Suppose matrices $A$ and $B$ are similar matrices. Then,
+        \begin{align*}
+            \detV A &= \detV B.
+        \end{align*}
+    \end{lemma}
+    \item[] \textbf{Problem 2}
+    \begin{lemma}
+        Let $A \in \mathbb{M}^{\C}_{n \times n}$. The determinant of $A$ is the product of its eigenvalues. That is, if $\{ \gl_1 , ..., \gl_n \}$ are its
+        eigenvalues, then
+        \begin{align*}
+            \detV A &= \gl_1 \gl_2 \cdots \gl_n.
+        \end{align*}
+    \end{lemma}
+
+    There was a hint for this problem, which can be expressed as the following lemma.
+    \begin{lemma}
+        Let $A \in \mathbb{M}^{\C}_{n \times n}$. Then,
+        \begin{align*}
+            \detV (A - \gl I) &= (\gl_1 - \gl) (\gl_2 - \gl) \cdots (\gl_n - \gl),
+        \end{align*}
+        Where $\gl_1, \gl_2, ..., \gl_n$ are the eigenvalues of $A$, listed with multiplicity.
+    \end{lemma}
+
+    \item[] \textbf{Problem 3a and 3b}
+    \begin{lemma}
+        Let $A: V \rar V$ be a linear map. Let $U$ be a subspace of $V$. If $U \subset \nullV A$, then $U$ is invariant under $A$.
+    \end{lemma}
+    \begin{lemma}
+        Let $A: V \rar V$ be a linear map. Let $U$ be a subspace of $V$. If $\ranV A \subset U$, then $U$ is invariant under $A$.
+    \end{lemma}
+\end{enumerate}
