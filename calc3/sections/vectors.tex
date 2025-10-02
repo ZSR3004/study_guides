@@ -1,0 +1,150 @@
+\section{Vectors}
+
+\subsection{Vector Basics}
+Vectors are arrows pointing to different areas on a graph.
+
+\begin{definition}
+    Suppose $\vec{v}$ is a vector. If its initial point is at $(a_1,b_1)$ and its terminal point (with the arrow) is at $(a_2, b_2)$, then
+    \begin{align*}
+        \vec{v} &= \langle a_2 - a_1, b_2 - b_1 \rangle
+    \end{align*}
+
+    If $(a_1, b_1) = (0,0)$ (that is, it starts at the origin), then we call that vector a position vector.
+\end{definition}
+
+\subsubsection{Vector Properties}
+
+\subsection{The Unit Vector}
+\begin{definition}
+    The \textbf{magnitude} or \textbf{length} of a vector, $\vec{v} = \langle a, b, c \rangle$ is found through the following formula.
+    \begin{align*}
+        | \vec{v} | &= \sqrt{a^2 - b^2 - c^2}
+    \end{align*}
+
+    The only vector with a length of zero is the zero vector. Vectors of length $1$ are called unit vectors.
+\end{definition}
+
+\begin{definition}
+    A \textbf{unit vector} is a vector of length one. They are useful for when we want to describe the direction (but not magnitude) of a vector.
+    Suppose theres a vector $\vec{v}$ which may or may not have a magnitude of $1$. We can find a vector that points in the same direction with the
+    following formula.
+    \begin{align*}
+        \frac{\vec{v}}{|\vec{v}|}
+    \end{align*}
+
+    This basically just scales down the vector to a length of $1$.
+\end{definition}
+
+\begin{notation}
+There are a few special unit vectors.
+    \begin{align*}
+        \hat{i} &= \langle 1, 0, 0 \rangle \\
+        \hat{j} &= \langle 0, 1, 0 \rangle \\
+        \hat{k} &= \langle 0, 0, 1 \rangle \\
+    \end{align*}
+\end{notation}
+
+\subsection{The Dot Product (Inner Product)}
+\begin{definition}
+    Suppose $\vec{v} = \vect{a_1, a_2, a_3}$ and $\vec{u} = \vect{b_1, b_2, b_3}$. Then, the \textbf{dot product} or \textbf{inner product} is defined
+    as the following.
+    \begin{align*}
+        \vec{v} \cdot \vec{u} &= a_1 b_1 + a_2 b_2 + a_3 b_3
+    \end{align*}
+\end{definition}
+
+\begin{thm}
+    If $\theta$ is the angle between two vectors $\vec{v}$ and $\vec{u}$, then 
+    \begin{align*}
+        \vec{v} \cdot \vec{u} &= |\vec{v}| |\vec{u}| \cos \gt
+    \end{align*}
+
+    Rearranging this equation, we get another helpful relationship.
+    \begin{align*}
+        \cos^{-1} \left( \frac{\vec{v} \cdot \vec{u}}{|\vec{v}| |\vec{u}|} \right) &= \gt
+    \end{align*}
+\end{thm}
+
+\begin{corollary}
+    If $\vec{v}$ and $\vec{u}$ are not zero vectors, then $\vec{v} \cdot \vec{u} = 0$ if and only if $\gt = 0$.
+\end{corollary}
+
+\subsubsection{Properties of the Dot Product}
+\begin{align*}
+    \vec{v} \cdot \vec{v} &= | \vec{v} |^2 \\
+    \vec{v} \cdot \vec{u} &= \vec{u} \cdot \vec{v} \\
+    \vec{v} \cdot (\vec{u} + \vec{w}) &= (\vec{v} \cdot \vec{u}) + (\vec{v} \cdot \vec{w}) \\
+    (c \vec{v}) \cdot \vec{u} &= c(\vec{v} \cdot \vec{u}) = \vec{v} \cdot (c \vec{u}) 
+\end{align*}
+
+\subsection{The Cross Product}
+\begin{definition}
+    The \textbf{cross product} of two vectors $\vec{v} = \vect{a_1, a_2, a_3}$ and $\vec{u} = \vect{b_1, b_2, b_3}$ is defined as follows.
+    \begin{align*}
+        \vec{v} \times \vec{u} &= \vect{a_2 b_3 - a_3 b_2, - (a_1 b_3 - a_3 b_1), a_1 b_2 - a_2 b_1}
+    \end{align*}
+\end{definition}
+\begin{thm}
+    The cross product of $\vec{v}$ and $\vec{u}$ is orthogonal to both.
+\end{thm}
+
+\begin{thm}
+    Let $\gt$ be the angle between $\vec{v}$ and $\vec{u}$. Then,
+    \begin{align*}
+        | \vec{v} \times \vec{u} | &= | \vec{v} | | \vec{u} | \sin \gt
+    \end{align*}
+\end{thm}
+
+\begin{corollary}
+    If $\vec{v}$ and $\vec{u}$ are not the zero vectors, then $\vec{v} \times \vec{u}$ if and only if $\vec{v}$ and $\vec{u}$ are orthonormal.
+\end{corollary}
+
+One last useful piece of information is that $\vec{v} \times \vec{u} = - \vec{u} \times \vec{v}$.
+
+\subsubsection{Defining the Cross Product with the Determinant}
+
+\begin{definition}
+    The \textbf{determinant} in two dimensions is defined as follows.
+    \begin{align*}
+        \begin{vmatrix}
+            a_1 & a_2 \\ 
+            b_1 & b_2
+        \end{vmatrix} &=
+        a_1 b_2 - a_2 b_1
+    \end{align*}
+
+    Where you are functionally multiplying across the diagonals.
+
+    In three dimensions, we define it as,
+    \begin{align*}
+        \left| \begin{array}{ccc}
+            a_1 & a_2 & a_3 \\
+            b_1 & b_2 & b_3 \\
+            c_1 & c_2 & c_3
+        \end{array} \right| &=
+        a_1 \left| \begin{array}{cc}
+            b_2 & b_3 \\ 
+            c_2 & c_3
+        \end{array} \right| -
+        a_2 \left| \begin{array}{cc}
+            b_1 & b_3 \\ 
+            c_1 & c_3
+        \end{array} \right| +
+        a_3 \left| \begin{array}{cc}
+            b_1 & b_2 \\ 
+            c_1 & c_2
+        \end{array} \right|
+    \end{align*}
+\end{definition}
+
+\begin{lemma}
+    Suppose you have two vectors, $\vec{v} = \vect{b_1, b_2, b_3}$ and $\vec{u} = \vect{c_1, c_2, c_3}$. The following property holds.
+    \begin{align*}
+        \vec{v} \times \vec{u} &= 
+        \left| \begin{array}{ccc}
+            \hat{i} & \hat{j} & \hat{k} \\
+            b_1 & b_2 & b_3 \\
+            c_1 & c_2 & c_3
+        \end{array} \right|
+    \end{align*}
+\end{lemma}

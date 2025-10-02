@@ -1,22 +1,75 @@
 \section{Background Math}
 
 \subsection{Set Notation}
-\subsubsection{Important Sets}
-\subsubsection{Subsets}
-\subsubsection{The Universe of Discourse}
+There a few really important things we need to recall from set theory. This section is mostly just clarifying the set theory notation used in this
+guide. We should know the sets, $\varnothing, \N, \Z, \R$. You should also understand the powerset, $\cP(a) = 2^A$. To describe subsets, we'll consider 
+the two types. $A \subseteq B$ (a proper subset, where $A \neq B$) and $A \subset B$ (the improper subset). Finally, you should recognize $\cU$ as the
+universe of discourse and $\bar A$ as the complement (although, you may find it also written as $A'$).
 
 \subsection{Counting}
-\subsubsection{Size of a Cardinality}
-\subsubsection{Permutations}
-\subsubsection{Combinations}
+\begin{defn}
+    A \textbfu{cardinality} is the number of elements in a set, and is denoted as $|A|$.
+\end{defn}
+\begin{example}
+    If a set $A$ has $n$ elements, then $|A| = n$ and $2^A = 2^n$.
+\end{example}
+
+\begin{defn}
+    A \textbfu{permutation} refers to the ordered sequences of a set, which may be denoted as $Perm(A)$.
+    If $A$ has $n$ elements, then $|Perm(A)| = n!$
+\end{defn}
+\begin{defn}
+    \textbfu{Sterling's Approximation} is a function used to estimate the cardinality of a permutation.
+    \begin{align*}
+        n! \approx \left( \frac{n}{e} \right)^n
+    \end{align*}
+\end{defn}
+
+\begin{defn}
+    The \textbfu{combinations} of a set (or number of subsets of size $k$) is the following.
+    \begin{align*}
+        \binom{n}{k} = \frac{n!}{k!(n - k)!} 
+    \end{align*}
+     % and | A \cross B | means something.
+\end{defn}
 
 \subsection{Sums}
 \subsubsection{Arithmetic}
+\begin{align*}
+    \sum_{i=1}^{n} i &= \frac{n(n+1)}{2} \\
+    \sum_{i=1}^{n} i^2 &= \frac{n(n + 1)(2n + 1)}{6} \\
+    \sum_{i=1}^{n} i^3 &= \frac{n^2(n+1)^2}{4}
+\end{align*}
 \subsubsection{Geometric}
+\begin{align*}
+    \sum_{i = 0}^{n} a^i &= \begin{cases}
+                                i = 1 & n \\
+                                i \neq 1 & \frac{a^{n + 1} - 1}{a - 1}
+                            \end{cases}
+\end{align*}
 
 \subsection{Special Functions}
 \subsubsection{Floors and Ceilings}
+\begin{align*}
+    \left\lfloor \frac{x}{y} \right\rfloor &= \text{ The largest integer smaller than } \frac{x}{y}. \\
+    \left\lceil \frac{x}{y} \right\rceil &= \text{ The smallest integer smaller than } \frac{x}{y}.
+\end{align*}
 \subsubsection{Logarithms}
+\begin{align*}
+    \lg^i (n) &= \lg(\lg^{(i-1)}(n)) \\
+    \lg^* (n) &= \{ i \; | \; \text{the final $i$ such that } lg^i (n) \leq 1 \}
+\end{align*}
 
 \subsection{Limits}
+\begin{defn}
+    \textbf{$L'H\hat{o}$pital's Rule} states,
+    \begin{align*}
+        \lim \frac{f}{g} &= \lim \frac{f'}{g'}.
+    \end{align*}
+\end{defn}
 \subsubsection{Important Limits}
+\begin{align*}
+    \lim_{n \rar \infty} \frac{n^k}{a^n} &= 0 & a > 1 \\
+    \lim_{n \rar \infty} \frac{\ln n}{n} &= \lim_{n \rar \infty} \frac{1}{n} = 0 \\
+    \lim_{n \rar \infty} \frac{\lg^k (n)}{n^{\epsilon}} &= 0 & \epsilon > 0
+\end{align*}

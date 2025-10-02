@@ -15,6 +15,10 @@
 \usepackage{mathrsfs}
 \usepackage{mathabx}
 \usepackage[T1]{fontenc}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+\pgfplotsset{compat=1.17}
 
 % Theorem Environments
 \theoremstyle{plain}
@@ -96,12 +100,26 @@
 
 % Vectors and Matrices
 \newcommand{\zV}{\mathbf{0}}
-\newcommand{\vect}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+% \newcommand{\vect}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\vect}[1]{\langle #1 \rangle}
+\newcommand{\partd}[2]{\frac{\partial #1}{\partial #2}}
 
 \title{Multivariable Calculus Study Guide}
 \author{Ziyad Rahman}
 \date{}
 \begin{document}
 \maketitle
+
+\include{sections/functions}
+
+\include{sections/vectors}
+
+\include{sections/planes}
+
+\include{sections/limits}
+
+\include{sections/derivatives}
+
+\include{sections/gradients}
 
 \end{document}

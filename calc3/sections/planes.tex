@@ -1,0 +1,36 @@
+\section{Planes}
+
+\begin{definition}
+    A \textbf{plane} in $\R^3$ is uniquely determined by a point in the plane $P_0 = (x_0, y_0, z_0)$ and the normal vector $\vec{n} = \vect{a, b, c}$.
+    \begin{align*}
+        ax + by + cz &= d
+    \end{align*}
+
+    For some constant $d$ such that $d = ax_0 + by_0 + cz_0$. So, the equation for a plane is more explicitly,
+    \begin{align*}
+        ax + by + cz &= ax_0 + by_0 + cz_0
+    \end{align*}
+
+    If you know a second point on the plane $P = (x, y ,z)$, you can derive this formula through the following method. First, find the vector
+    between $P_0$ and $P$.
+    \begin{align*}
+        \vec{P_0 P} &= \vect{x - x_0, y - y_0, z - z_0}
+    \end{align*}
+
+    This produces a vector orthonormal to the plane (since its a point on the plane pointing to another point on the plane). Since the normal vector
+    was defined to be normal to the plane, we know its also normal to this vector. So, the angle between the $\vec{n}$ and $\vec{P_0 P}$ is 
+    $\frac{\pi}{2}$. Therefore,
+    \begin{align*}
+        \vec{n} \cdot \vec{P_0 P} &= 0 \\
+        &= a(x - x_0) + b(y - y_0) + c(z - z_0)
+    \end{align*}
+
+    Isolating the constants to one side, this is exactly the equation of a plane.
+\end{definition}
+
+\begin{remark}
+    Given three points on a plane, $P, Q, R$, you can find the normal vector (and the equation of the plane) by using the cross product.
+    \begin{align*}
+        \vec{n} &= \vec{P Q} \times \vec{PR}
+    \end{align*}
+\end{remark}
